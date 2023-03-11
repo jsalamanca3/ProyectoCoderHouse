@@ -1,0 +1,14 @@
+.div__container_products,
+.a__categorias_products,
+.div__cards_products,
+.p__products_information {
+    font-size: var(--letter-large);
+    font-family: var(--font-letter);
+    font-weight: var(--font-weight-letter-regular);
+}
+.p__products_information {
+    font-size: var(--letter-medium);
+}
+.a__categorias_products {
+    font-size: var(--title-large);
+}

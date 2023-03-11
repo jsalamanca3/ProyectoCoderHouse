@@ -1,0 +1,54 @@
+:root{
+    --font-title: 'Work Sans', sans-serif;
+    --font-letter: 'Merriweather', serif;
+    --font-weight-title-light: 500;
+    --font-weight-title-regular: 700;
+    --font-weight-title-medium: 900;
+    --font-weight-letter-light: 300;
+    --font-weight-letter-light-italic: 300;
+    --font-weight-letter-regular: 400;
+    --font-weight-letter-regular-italic: 400;
+
+    --letter-small: 1.2rem;
+    --letter-medium: 1.4rem;
+    --letter-large: 1.8rem;
+    --title-small: 1.4rem;
+    --title-medium: 1.8rem;
+    --title-large: 2.4rem;
+    --title-ex: 3.2rem;
+    --title-haiger: 4rem;
+
+    --color-title: #1b2021;
+    --color-letter: #38302e;
+    --color-letter-li: #e6e8e6;
+
+    --color-background-content: #e6e8e6;
+    --color-nav: #0e6ba8;
+    --color-btn-red-social: #f0ffff;
+    --color-letter-btn: #1b2021;
+
+    --color-background-header: #344A53;
+    --color-background-footer: #4B4453;
+    --color-background-sections: #FCF8FF;
+    --color-background-sections-otros: #B0A8B9;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    font-size: 62.5%;
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+}
+main {
+    background-color: var(--color-background-sections);
+}
+

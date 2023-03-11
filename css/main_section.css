@@ -1,0 +1,45 @@
+/* Corresponde al main de la section de navegación */
+.section__main-servicios {
+    width: 100%;
+    height: auto;
+}
+.div__section-servicios {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h1__section-servicios {
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: var(--title-haiger);
+    font-family: var(--font-title);
+    font-weight: var(--font-weight-title-medium);
+
+}
+.div__section-ul {
+    width: 95%;
+    height: auto;
+}
+.ul__section-li {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    list-style: none;
+    font-size: var(--letter-large);
+    font-family: var(--font-latter);
+    font-weight: var(--font-weight-letter-regular);
+    margin-bottom: 10px;
+    border-bottom: 2px solid #666;
+}
+.material-symbols-outlined {
+    color: #BDBDBD;
+}
+a {
+    text-decoration: none;
+    color: #BDBDBD;
+}
+a:hover {
+    text-decoration: none;
+    color: blue;
+}

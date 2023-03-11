@@ -1,0 +1,120 @@
+/*styles carrucel*/
+.container__carrucel {
+    width: 100%;
+    height: 30vw;
+    margin-top: 15px;
+}
+.img__carrucel {
+    width: 100%;
+    height: 30vw;
+}
+/*styles gallery img*/
+.container__img-index {
+    width: 100%;
+    height: auto;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.h2_text-gallery {
+    margin-top: 10px;
+    margin-bottom: 15px;
+    font-size: var(--title-haiger);
+    font-family: var(--font-title);
+    font-weight: var(--font-weight-title-medium);
+}
+.div___container-gallery {
+    width: 90%;
+    height: auto;
+    display: grid;
+    grid-template-areas:
+    "primerafila"
+    "segundafila";
+}
+.div__gallery-img {
+    grid-area: primerafila;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 1fr 0.5fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+    margin-top: 15px;
+}
+.img__gallery-index {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.img-caja1  {
+    grid-area: 1 / 1 / 3 / 2;
+    height: 100%;
+}
+.img-caja2 { grid-area: 1 / 2 / 2 / 4; }
+.img-caja3 { grid-area: 2 / 2 / 3 / 3; }
+.img-caja4  { grid-area: 2 / 3 / 3 / 4; }
+.img-caja5  {
+    grid-area: 1 / 4 / 3 / 6;
+    height: 100%;
+}
+
+.div__gallery_img2 {
+    grid-area: segundafila;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    margin-top: 10px;
+}
+
+.img-caja6 { grid-area: 1 / 1 / 2 / 2; }
+.img-caja7 { grid-area: 1 / 2 / 2 / 3; }
+.img-caja8  { grid-area: 1 / 3 / 2 / 4; }
+
+/*section presentation*/
+
+.div__section-presentation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: auto;
+}
+.h2__section-presentation {
+    margin-top: 40px;
+    margin-bottom: 15px;
+    font-size: var(--title-haiger);
+    font-family: var(--font-title);
+    font-weight: var(--font-weight-title-regular);
+}
+.conainer__section-presentation {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    justify-content: space-around;
+}
+.div__container_presentation {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+.h3__section-presentation {
+    margin-top: 15px;
+    font-size: var(--title-large);
+    font-family: var(--font-title);
+    font-weight: var(--font-weight-title-medium);
+}
+.p__container-presentation {
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: 50px;
+    text-align: justify;
+    font-size: var(--letter-large);
+    font-family: var(--font-letter);
+    font-weight: var(--font-weight-letter-light);
+}
+
+
+
+
