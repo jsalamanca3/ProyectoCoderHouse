@@ -1,0 +1,97 @@
+.hamburguer{
+    display: initial;
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    width: 25px;
+    cursor: pointer;
+}
+.nav-menu-buttons {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #181719;
+    right: 0;
+    transform: translateX(110%);
+    transition:transform 0.3s ease-in-out;
+    box-shadow: 0 0 6px #181719;
+    z-index: 1;
+}
+.menu-open {
+    display: grid;
+    align-content: space-around;
+    justify-content: space-around;
+    justify-items: center;
+}
+.open{
+    transform: translateX(0);
+}
+.nav-menu-desplegar {
+    width: 100%;
+    height: auto;
+}
+.imagen-light{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.534);
+    transform: translate(100%);
+    transition: transform .2s ease-in-out;
+}
+.agregar-imagen{
+    width: 60%;
+    transform: scale(0);
+    border-radius: 10px;
+    transition: transform .3s .2s;
+}
+.showImage{
+    transform: scale(1);
+}
+.show{
+    transform: translate(0);
+}
+.close {
+    display: initial;
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    width: 25px;
+    cursor: pointer;
+    z-index: 1;
+}
+.nav-menu-buttons {
+    display: flex;
+}
+.close {
+    display: none;
+}
+.nav-menu-desplegar {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.a__hamburguer_menu {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.nav__styles_menu {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.8rem;
+}
+@media screen and (min-width: 1023px) {
+    .menu__hamburguer_container {
+        display: none;
+    }
+}

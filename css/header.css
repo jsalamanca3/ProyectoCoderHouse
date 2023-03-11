@@ -50,3 +50,9 @@ header {
 .li__a-links:hover {
     text-decoration: none;
 }
+
+@media screen and (max-width: 1023px) {
+    .nav__container-links {
+        display: none;
+    }
+}
