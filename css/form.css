@@ -1,10 +1,10 @@
 .header {
     color: #36A0FF;
-    font-size: 27px;
+    font-size: 25px;
     padding: 10px;
 }
 .bigicon {
-    font-size: 35px;
+    font-size: 25px;
     color: #36A0FF;
 }
 .container__form_contacto {
@@ -41,4 +41,18 @@ input::placeholder {
 button {
     font-size: var(--letter-medium);
     font-family: var(--font-letter);
+}
+footer{
+    margin-top: 50px;
+}
+
+@media screen and (max-width: 767px) {
+    .text__center {
+        text-align: center;
+        width: 100%;
+        margin-bottom: 25px;
+    }
+    .container__form_contacto{
+        width: 90% !important;
+    }
 }

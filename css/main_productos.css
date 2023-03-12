@@ -5,6 +5,7 @@
     font-size: var(--letter-large);
     font-family: var(--font-letter);
     font-weight: var(--font-weight-letter-regular);
+    text-align: justify;
 }
 .p__products_information {
     font-size: var(--letter-medium);

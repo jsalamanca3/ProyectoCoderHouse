@@ -56,3 +56,8 @@ header {
         display: none;
     }
 }
+@media screen and (max-width: 400px) {
+    .img__logo-beta {
+        width: 80%;
+    }
+}

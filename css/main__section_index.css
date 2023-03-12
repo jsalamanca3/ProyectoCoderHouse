@@ -170,5 +170,13 @@
     }
 }
 
+@media screen and (max-width: 425px){
+    .container__carrucel {
+        height: 80vw;
+    }
+    .img__carrucel {
+        height: 80vw;
+    }
+}
 
 
