@@ -27,7 +27,7 @@ footer {
 .li__a-links {
     text-decoration: none;
 }
-.li_a-links:hover {
+.li__a-links:hover {
     text-decoration: none;
 }
 .footer__p-margintop {
@@ -43,4 +43,15 @@ footer {
 .fa-brands, .fab {
     font-size: 4.5rem;
     color: var(--color-btn-red-social);
+}
+
+.fa-brands:hover {
+    color: #FF230E;
+    font-size: 6rem;
+}
+
+@media screen and (max-width: 460px){
+    .container__footer{
+        width: 100%;
+    }
 }

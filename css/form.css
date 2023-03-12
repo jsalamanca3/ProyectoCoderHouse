@@ -16,3 +16,29 @@
     margin-bottom: 10px;
     justify-content: center;
 }
+h2,h3,h4,h5{
+    font-size: var(--title-large);
+    font-family: var(--font-title);
+    font-weight: var(--font-weight-title-regular);
+}
+p {
+    font-size: var(--letter-medium);
+    font-family: var(--font-letter);
+    font-weight: var(--font-weight-letter-regular);
+}
+legend {
+    font-size: var(--title-large);
+    font-family: var(--font-title);
+    font-weight: var(--font-weight-title-regular);
+}
+input,
+textarea,
+input::placeholder {
+    font-size: var(--letter-small);
+    font-family: var(--font-letter);
+    font-style: italic;
+}
+button {
+    font-size: var(--letter-medium);
+    font-family: var(--font-letter);
+}
