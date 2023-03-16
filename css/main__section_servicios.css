@@ -15,7 +15,7 @@
     width: 90%;
     height: auto;
     margin-top: 50px;
-    margin-bottom: 70px;
+    margin-bottom: 110px;
 }
 
 .div_servicios {
@@ -23,10 +23,7 @@
     display: grid;
     width: 95%;
     height: auto;
-    margin-top: 50px;
-    align-items: center;
-    justify-items: start;
-
+    align-content: space-around;
 }
 .div__servicios-img {
     grid-area: 1 / 2 / 2 / 3;
@@ -151,32 +148,40 @@
     margin-bottom: 50px;
 }
 .btn__servicios_concer-mas {
-    width: 30%;
+    width: 60%;
     height: 60px;
-    background-color: #325082;
-    border: #325082;
+    background-color: var(--color-background-cards-photos);
+    border: var(--color-btn-conocer-mas);
+    font-size: var(--letter-large);
+    font-family: var(--font-letter);
+    font-weight: var(--font-weight-title-medium);
+    color: var(--color-letter-card);
+    box-shadow: 0 0 6px #181719;
+}
+.btn__servicios_concer-mas:hover {
+    background-color: var(--color-btn-conocer-mas);
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 1224px) {
     .div__cart-img {
-        width: 30%;
-        margin-top: 20%;
+        width: 40%;
+        margin-top: 19%;
         margin-right: 1%;
     }
     .inversa__div_cart-img {
-        margin-right: 13.2%;
+        margin-right: 3.2%;
     }
 }
 
-@media screen and (max-width: 767px){
+@media screen and (max-width: 900px){
     .section__servicios {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2, 0.5fr);
     }
     .div_servicios {
         grid-area: 1 / 1 / 2 / 2;
-        margin-top: 40px;
-        margin-bottom: 10px;
+        width: 100%;
+        margin-bottom: 30px;
     }
     .div__servicios-img {
         grid-area: 2 / 1 / 3 / 2;
@@ -185,29 +190,27 @@
         margin-right: 2%;
     }
     .div__cart-img {
-        width: 55%;
-        margin-top: 43%;
+        width: 65%;
+        margin-top: 41%;
         margin-right: 2%;
     }
 }
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 500px) {
     .div__cart-img {
         width: 85%;
         margin-top: 43%;
         margin-right: 2%;
     }
     .div_servicios {
-        margin-top: 10px;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
     .section__servicios {
         width: 94.5%;
-        margin-top: 0px;
-        margin-bottom: 35px;
+        margin-top: 40px;
+        margin-bottom: 100px;
     }
-    .inversa__section_servicios{
-        margin-top: 60px;
-        margin-bottom: 60px;
+    .h2_tittle-map {
+        margin-top: 75px;
     }
 }
 
