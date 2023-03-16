@@ -21,6 +21,7 @@
     --color-title: #1b2021;
     --color-letter: #38302e;
     --color-letter-li: #e6e8e6;
+    --color-letter-card: #e6e8e6;
 
     --color-background-content: #e6e8e6;
     --color-nav: #0e6ba8;
@@ -31,6 +32,7 @@
     --color-background-footer: #4B4453;
     --color-background-sections: #FCF8FF;
     --color-background-sections-otros: #B0A8B9;
+    --color-background-cards-photos: #181719;
 }
 * {
     box-sizing: border-box;
