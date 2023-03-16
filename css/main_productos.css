@@ -11,5 +11,11 @@
     font-size: var(--letter-medium);
 }
 .a__categorias_products {
-    font-size: var(--title-large);
+    font-size: var(--title-ex);
+}
+.nav-link {
+    color: #00487c ;
+}
+.nav-link:hover {
+    color: #027bce;
 }
