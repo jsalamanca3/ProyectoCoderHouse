@@ -19,4 +19,16 @@
 .nav-link:hover {
     color: var(--color-nav-li-hover);
 }
-
+.img__card_productos {
+    height: 450px;
+}
+@media screen and (max-width: 1224px) {
+    .img__card_productos {
+        height: 350px;
+    }
+}
+@media screen and (max-width: 568px) {
+    .img__card_productos {
+        height: auto;
+    }
+}
