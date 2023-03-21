@@ -1,0 +1,46 @@
+/* Corresponde al main de la section de navegación */
+main {
+    .section__main-servicios {
+        width: 100%;
+        height: auto;
+        .div__section-servicios {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .div__section-ul {
+                width: 95%;
+                height: auto;
+                .h1__section-servicios {
+                    margin-top: 25px;
+                    margin-bottom: 15px;
+                    font-size: $title-haiger;
+                    font-family: $font-title;
+                    font-weight: $font-weight-title-medium;
+                }
+                .ul__section-li {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 12px;
+                    list-style: none;
+                    font-size: $letter-large;
+                    font-family: $font-letter;
+                    font-weight: $font-weight-letter-regular;
+                    margin-bottom: 10px;
+                    border-bottom: 2px solid #666;
+                    li a {
+                        text-decoration: none;
+                        color: $color-letter-a;
+                        span .material-symbols-outlined {
+                            color: #BDBDBD;
+                        }
+                    }
+                    li a:hover {
+                        text-decoration: none;
+                        color: $color-nav;
+                    }
+                }
+            }
+        }
+    }
+}
+

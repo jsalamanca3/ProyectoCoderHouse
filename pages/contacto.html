@@ -18,23 +18,20 @@
   <link rel="stylesheet" href="../css/fontawesome.min.css">
   <link rel="stylesheet" href="../css/menu.css">
   <link rel="stylesheet" href="../css/all.min.css">
-  <link rel="stylesheet" href="../css/styles.css">
-  <link rel="stylesheet" href="../css/header.css">
-  <link rel="stylesheet" href="../css/main_section.css">
-  <link rel="stylesheet" href="../css/footer.css">
-  <link rel="stylesheet" href="../css/form.css">
+  <link rel="stylesheet" href="../scss/styles.css">
 </head>
 
 <body>
   <header>
     <div class="container__header-nav-img">
-      <div class="header__img-logo"><a href="../index.html"><img class="img__logo-beta" src="../assets/image/beta2.png"
+      <div class="header__img-logo"><a href="../index.html">
+        <img class="img__logo-beta" src="../assets/image/beta2.png"
             alt="Logo de la página web"></a>
       </div>
       <div class="menu__hamburguer_container">
         <div class="imagen-light">
           <img src="../assets/image/close.svg" alt="" class="close">
-          <img src="" alt="" class="agregar-imagen">
+          <img src="../assets/image/close.svg" alt="" class="agregar-imagen">
         </div>
         <div class="header-home">
           <button" class="home-button">
@@ -47,7 +44,7 @@
             </li>
             <li class="nav-home-li nav__styles_menu"><a class="a__hamburguer_menu" href="productos.html">Productos</a>
             </li>
-            <li class="nav-home-li nav__styles_menu"><a class="a__hamburguer_menu" href="carrito.html">Historia</a></li>
+            <li class="nav-home-li nav__styles_menu"><a class="a__hamburguer_menu" href="carrito.html">Sobre Nosotros</a></li>
             <li class="nav-home-li nav__styles_menu"><a class="a__hamburguer_menu" href="contacto.html">Contacto</a>
             </li>
           </ul>
@@ -58,13 +55,27 @@
           <li class="ul__li-links"><a class="li__a-links" href="../index.html">Inicio</a></li>
           <li class="ul__li-links"><a class="li__a-links" href="Servicios.html">Servicios</a></li>
           <li class="ul__li-links"><a class="li__a-links" href="productos.html">Productos</a></li>
-          <li class="ul__li-links"><a class="li__a-links" href="carrito.html">Historia</a></li>
+          <li class="ul__li-links"><a class="li__a-links" href="carrito.html">Sobre Nosotros</a></li>
           <li class="ul__li-links"><a class="li__a-links" href="contacto.html">Contacto</a></li>
         </ul>
       </nav>
     </div>
   </header>
   <main>
+    <section class="section__main-servicios">
+      <div class="div__section-servicios">
+        <div class="div__section-ul">
+          <h1 class="h1__section-servicios">Contáctanos</h1>
+          <ul class="ul__section-li">
+            <li><a href="../index.html">Inicio</a></li>
+            <li><span class="material-symbols-outlined">
+                chevron_right
+              </span></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
     <section>
       <div class="container-fluid">
         <div class="row mt-5">
@@ -113,15 +124,15 @@
               </fieldset>
             </form>
           </div>
-          <div class="col-5 mt-2 text__center">
+          <div class="col-5 mt-2 text__center CajaDiv__contacto-textForm">
             <div class="mt-5">
-              <h2 class="">Horario de atención al cliente</h2>
+              <h2 class="h2__form_horario">Horario de atención al cliente</h2>
               <p class="m-4 mb-2">Lunes a viernes de 7:00am a 4:00pm</p>
               <p class="m-4 mb-2">Sabados de 9:00am a 2:00pm</p>
               <p class="m-4 mb-5">Domingo de 8:00am a 1:00pm</p>
             </div>
-            <div class="mb-5 text__center">
-              <h2>Puedes escribirnos a nuestro correo electrónico</h2>
+            <div class="mb-5 text__center CajaDiv__contacto-textForm"">
+              <h2 class="h2__form_horario">Puedes escribirnos a nuestro correo electrónico</h2>
               <p class="m-4 mb-2">tiendasvirtuales@pruebanooficial.com</p>
               <p class="m-4 mb-2">Atención al cliente:</p>
               <p class="m-4 mb-2">Lunes a viernes de 7:00am a 7:00pm</p>

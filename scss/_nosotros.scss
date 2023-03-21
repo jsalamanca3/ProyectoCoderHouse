@@ -1,0 +1,68 @@
+.div__container_section-historia {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.container__section-hitoria{
+    width: 90%;
+}
+.h2__historia-bienvenida {
+    margin-top: 40px;
+    text-align: center;
+    font-size: $title-historia;
+    font-family: $font-letter-historia;
+    font-weight: $font-weight-title-regular;
+    color: $color-letter-historia;
+}
+hr {
+    width: 30%;
+    margin: auto;
+    border: 3px solid #181719;
+    opacity: 1;
+    box-shadow: 0 0 6px #181719;
+    border-radius: 50%;
+}
+.p__historias-bienvenida {
+    margin-top: 50px;
+    text-align: center;
+    font-size: $title-large;
+    font-family: $font-title;
+    font-weight: $font-weight-historia;
+    color: $color-letter;
+}
+.div__container-img-historia {
+    display: grid;
+    margin-top: 110px;
+    width: 100%;
+    justify-items: center;
+}
+.div__container__historia-img {
+    width: 65%;
+    height: 80%;
+    justify-items: center;
+    border: 3px solid #181719;
+    box-shadow: 0 0 6px #181719;
+    background: #181719;;
+}
+.img__picture-historia {
+    width: 100%;
+    height: 100%;
+    padding: 1%;
+}
+.h__section_principios-historia {
+    margin-bottom: 20px;
+    font-size: $title-haiger;
+    font-family: $font-title;
+    font-weight: $font-weight-historia;
+    color: $color-letter;
+    text-align: center;
+}
+.p__section_principios-historia {
+    margin-top: 30px;
+    padding: 0 10% 0 10%;
+    font-size: $title-large;
+    font-family: $font-title;
+    font-weight: $font-weight-historia;
+    color: $color-letter;
+    text-align: center;
+}

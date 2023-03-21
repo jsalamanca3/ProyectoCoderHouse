@@ -1,7 +1,9 @@
 :root{
     --font-title: 'Work Sans', sans-serif;
     --font-letter: 'Merriweather', serif;
+    --font-letter-historia: 'Josefin Sans', sans-serif;
     --font-weight-title-light: 500;
+    --font-weight-historia: 400;
     --font-weight-title-regular: 700;
     --font-weight-title-medium: 900;
     --font-weight-letter-light: 300;
@@ -16,7 +18,8 @@
     --title-medium: 1.8rem;
     --title-large: 2.4rem;
     --title-ex: 3.2rem;
-    --title-haiger: 4rem;
+    --title-haiger: 5rem;
+    --title-historia: 10rem;
 
     --color-title: #1b2021;
     --color-letter: #38302e;
@@ -31,6 +34,8 @@
     --color-nav-li-hover: #027bce;
     --color-nav-link: #00487c;
     --color-letter-btn: #1b2021;
+    --color-letter-historia: #0082FF;
+    --color-hr: #008BE4;
 
     --color-background-header: #344A53;
     --color-background-footer: #4B4453;

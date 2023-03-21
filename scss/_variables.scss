@@ -1,0 +1,88 @@
+$font-title: 'Work Sans', sans-serif;
+$font-letter: 'Merriweather', serif;
+$font-letter-historia: 'Josefin Sans', sans-serif;
+$font-weight-title-light: 500;
+$font-weight-historia: 400;
+$font-weight-title-regular: 700;
+$font-weight-title-medium: 900;
+$font-weight-letter-light: 300;
+$font-weight-letter-light-italic: 300;
+$font-weight-letter-regular: 400;
+$font-weight-letter-regular-italic: 400;
+
+$letter-small: 1.2rem;
+$letter-medium: 1.4rem;
+$letter-large: 1.8rem;
+$title-small: 1.4rem;
+$title-medium: 1.8rem;
+$title-large: 2.4rem;
+$title-ex: 3.2rem;
+$title-haiger: 5rem;
+$title-historia: 10rem;
+
+$color-title: #1b2021;
+$color-letter: #38302e;
+$color-letter-li: #e6e8e6;
+$color-letter-card: #e6e8e6;
+$color-letter-a: #898989;
+
+$color-background-content: #e6e8e6;
+$color-nav: #0e6ba8;
+$color-btn-red-social: #f0ffff;
+$color-btn-conocer-mas: #325082;
+$color-nav-li-hover: #027bce;
+$color-nav-link: #00487c;
+$color-letter-btn: #1b2021;
+$color-letter-historia: #0082FF;
+$color-hr: #008BE4;
+$color-contacto: #36A0FF;
+
+$color-background-header: #344A53;
+$color-background-footer: #4B4453;
+$color-background-sections: #FCF8FF;
+$color-background-sections-otros: #B0A8B9;
+$color-background-cards-photos: #181719;
+
+
+/* método get
+$fuentes-size:(
+    thin: 100,
+    light: 300,
+)
+.gg: map-get($stilos, color)
+
+@extend nombre clase;
+backgroud: #666
+
+Mixin
+$mixin flex-direction-center($direction,$justify-center) {
+    displey: flex;
+    flex-direction: $direction;
+    justify-content: $justify-center
+    {
+
+@include flex-direction-center($direction)
+
+
+
+
+--No incluir en el proyecto
+
+@each $key, $valor in $redes {
+    .red-#($key){
+        background-color: blue;
+        font-siza: 2rem;
+    }
+}
+
+@mixin redes(#nombre) {
+    @if $nombre == instagram {
+        color: blue;
+    }@else if $nombre == facebook {
+        color: violet;
+    }@else if $nombre == instagram {
+        color: black;
+    }@else {
+        color: green
+    }
+*/

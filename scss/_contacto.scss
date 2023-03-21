@@ -1,0 +1,66 @@
+main {
+    background: $color-background-sections;
+    .container__form_contacto {
+        margin-top: 20px;
+        margin-bottom: 30px;
+        legend {
+            font-size: $title-large;
+            font-family: $font-title;
+            font-weight: $font-weight-title-regular;
+        }
+        .header {
+            color: $color-contacto;
+            font-size: 25px;
+            padding: 10px;
+        }
+        .bigicon {
+            font-size: 25px;
+            color: $color-contacto;
+        }
+        .form-group {
+            margin-top: 15px;
+            margin-bottom: 10px;
+            justify-content: center;
+        }
+        input,
+        textarea,
+        input::placeholder {
+            font-size: $letter-small;
+            font-family: $font-letter;
+            font-style: italic;
+        }
+        button {
+            font-size: $letter-medium;
+            font-family: $font-letter;
+        }
+    }
+    div .text__center {
+        .h2__form_horario {
+            font-size: $title-large;
+            font-family: $font-title;
+            font-weight: $font-weight-title-regular;
+        }
+        p {
+            font-size: $letter-medium;
+            font-family: $font-letter;
+            font-weight: $font-weight-letter-regular;
+        }
+    }
+    footer{
+        margin-top: 50px;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    main {
+        .container__form_contacto {
+            width: 90% !important;
+        }
+        div .CajaDiv__contacto-textForm {
+            text-align: center;
+            width: 100%;
+            margin-bottom: 25px;
+        }
+    }
+}
