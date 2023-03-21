@@ -41,6 +41,14 @@ main {
 }
 @media screen and (max-width: 568px) {
     main {
+        .div__container_products {
+            .a__categorias_products {
+                font-size: $title-medium;
+            }
+            .nav-link {
+                font-size: $title-small;
+            }
+        }
         .div__cards_products {
             .img__card_productos {
                 height: auto;

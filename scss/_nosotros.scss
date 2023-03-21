@@ -1,68 +1,219 @@
-.div__container_section-historia {
-    display: flex;
-    justify-content: center;
-    width: 100%;
+main {
+    .div__container_section-historia {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        .container__section-hitoria{
+            width: 90%;
+            .h2__historia-bienvenida {
+                margin-top: 40px;
+                text-align: center;
+                font-size: $title-historia;
+                font-family: $font-letter-historia;
+                font-weight: $font-weight-title-regular;
+                color: $color-letter-historia;
+            }
+            hr {
+                width: 30%;
+                margin: auto;
+                border: 3px solid #181719;
+                opacity: 1;
+                box-shadow: 0 0 6px #181719;
+                border-radius: 50%;
+            }
+            .p__historias-bienvenida {
+                margin-top: 50px;
+                text-align: center;
+                font-size: $title-large;
+                font-family: $font-title;
+                font-weight: $font-weight-historia;
+                color: $color-letter;
+            }
+        }
+    }
+    .div__container-img-historia {
+        display: grid;
+        margin-top: 110px;
+        width: 100%;
+        justify-items: center;
+        .div__container__historia-img {
+            width: 65%;
+            height: 80%;
+            justify-items: center;
+            border: 3px solid #181719;
+            box-shadow: 0 0 6px #181719;
+            background: #181719;;
+            .img__picture-historia {
+                width: 100%;
+                height: 100%;
+                padding: 1%;
+            }
+        }
+    }
+    .h__section_principios-historia {
+        margin-bottom: 20px;
+        font-size: $title-haiger;
+        font-family: $font-title;
+        font-weight: $font-weight-historia;
+        color: $color-letter;
+        text-align: center;
+    }
+    .p__section_principios-historia {
+        margin-top: 30px;
+        padding: 0 10% 0 10%;
+        font-size: $title-large;
+        font-family: $font-title;
+        font-weight: $font-weight-historia;
+        color: $color-letter;
+        text-align: center;
+    }
+    .container {
+        width: 70%;
+        .card-columns {
+            column-count: 2;
+            column-gap: 20px;
+            .card-img {
+                width: 100%;
+                height: 350px;
+            }
+            .card-img-overlay {
+                background: rgba(0, 0, 0, 0.3);
+                .h4Title-nosotros {
+                    font-size: $title-ex;
+                    font-family: $font-title;
+                    font-weight: $font-weight-title-regular;
+                    color: $color-letter-card;
+                }
+                .card-text {
+                    font-size: $letter-large;
+                    font-family: $font-title;
+                    font-weight: $font-weight-historia;
+                    color: $color-letter-card;
+                }
+            }
+        }
+        .card-columns .card {
+            margin: 0 0 20px 0;
+        }
+        .card-columns h4 {
+            font-size: 22px;
+        }
+    }
+    .section__siguenos {
+        width: 100%;
+        height: auto;
+        .hr__siguenos {
+            width: 90%;
+            margin: auto;
+            margin-top: 70px;
+            border: 3px solid #181719;
+            opacity: 1;
+            box-shadow: 0 0 6px #181719;
+            border-radius: 50%;
+        }
+        .h2__Title-siguenos {
+            margin-top: 70px;
+            padding: 0 10% 0 10%;
+            font-size: $title-historia;
+            font-family: $font-title;
+            font-weight: $font-weight-title-regular;
+            color: $color-letter;
+            text-align: center;
+        }
+        .h3__Title-siguenos {
+            margin-top: 70px;
+            padding: 0 10% 0 10%;
+            font-size: $title-haiger;
+            font-family: $font-title;
+            font-weight: $font-weight-title-light;
+            color: $color-letter;
+            text-align: center;
+        }
+        .h4__Title-siguenos {
+            margin-top: 70px;
+            margin-bottom: 60px;
+            padding: 0 10% 0 10%;
+            font-size: $title-ex;
+            font-family: $font-title;
+            font-weight: $font-weight-title-light;
+            color: $color-letter;
+            text-align: center;
+        }
+    }
+
 }
-.container__section-hitoria{
-    width: 90%;
+
+@media screen and (max-width: 1023px) {
+    main {
+        .div__container_section-historia {
+            .container__section-hitoria {
+                .h2__historia-bienvenida {
+                    font-size: 6.0rem;
+                    font-weight: $font-weight-title-medium;
+                }
+                .p__historias-bienvenida {
+                    font-size: $title-medium;
+                }
+            }
+        }
+        .h__section_principios-historia {
+            font-size: $title-ex;
+        }
+        .p__section_principios-historia{
+            font-size: $title-medium;
+        }
+        .section__siguenos {
+            .h2__Title-siguenos {
+                font-size: 6.0rem;
+            }
+            .h3__Title-siguenos {
+                font-size: $title-ex;
+            }
+            .h4__Title-siguenos {
+                font-size: $title-large;
+            }
+        }
+    }
 }
-.h2__historia-bienvenida {
-    margin-top: 40px;
-    text-align: center;
-    font-size: $title-historia;
-    font-family: $font-letter-historia;
-    font-weight: $font-weight-title-regular;
-    color: $color-letter-historia;
-}
-hr {
-    width: 30%;
-    margin: auto;
-    border: 3px solid #181719;
-    opacity: 1;
-    box-shadow: 0 0 6px #181719;
-    border-radius: 50%;
-}
-.p__historias-bienvenida {
-    margin-top: 50px;
-    text-align: center;
-    font-size: $title-large;
-    font-family: $font-title;
-    font-weight: $font-weight-historia;
-    color: $color-letter;
-}
-.div__container-img-historia {
-    display: grid;
-    margin-top: 110px;
-    width: 100%;
-    justify-items: center;
-}
-.div__container__historia-img {
-    width: 65%;
-    height: 80%;
-    justify-items: center;
-    border: 3px solid #181719;
-    box-shadow: 0 0 6px #181719;
-    background: #181719;;
-}
-.img__picture-historia {
-    width: 100%;
-    height: 100%;
-    padding: 1%;
-}
-.h__section_principios-historia {
-    margin-bottom: 20px;
-    font-size: $title-haiger;
-    font-family: $font-title;
-    font-weight: $font-weight-historia;
-    color: $color-letter;
-    text-align: center;
-}
-.p__section_principios-historia {
-    margin-top: 30px;
-    padding: 0 10% 0 10%;
-    font-size: $title-large;
-    font-family: $font-title;
-    font-weight: $font-weight-historia;
-    color: $color-letter;
-    text-align: center;
+
+
+
+@media screen and (max-width: 767px) {
+    main {
+        .div__container_section-historia {
+            .container__section-hitoria {
+                .h2__historia-bienvenida {
+                    font-size: 4.2rem;
+                }
+                .p__historias-bienvenida {
+                    font-size: $title-medium;
+                }
+            }
+        }
+        .container {
+            width: 100%;
+            .card-columns {
+                column-count: 1;
+                .card-img-overlay {
+                    .h4Title-nosotros {
+                        font-size: $title-large;
+                    }
+                    .card-text {
+                        font-size: $letter-medium;
+                    }
+                }
+            }
+        }
+        .section__siguenos {
+            .h2__Title-siguenos {
+                font-size: 4.2rem;
+            }
+            .h3__Title-siguenos {
+                font-size: $title-large;
+            }
+            .h4__Title-siguenos {
+                font-size: $title-medium;
+            }
+        }
+    }
 }

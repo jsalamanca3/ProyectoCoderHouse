@@ -167,10 +167,18 @@ main .section__main-servicios .div__section-servicios .div__section-ul .ul__sect
   color: #0e6ba8;
 }
 
-/*styles carrucel*/
-main {
-  /*styles gallery img*/
-  /*section presentation*/
+@media screen and (max-width: 1023px) {
+  main .section__main-servicios .div__section-servicios .div__section-ul .h1__section-servicios {
+    font-size: 4.8rem;
+  }
+  main .section__main-servicios .div__section-servicios .div__section-ul .ul__section-li {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  main .section__main-servicios .div__section-servicios .div__section-ul .h1__section-servicios {
+    font-size: 3.8rem;
+  }
 }
 main .main__section_index .container__carrucel {
   width: 100%;
@@ -195,6 +203,7 @@ main .container__img-index .h2_text-gallery {
   font-size: 5rem;
   font-family: "Work Sans", sans-serif;
   font-weight: 900;
+  color: #212529;
 }
 main .container__img-index .div___container-gallery {
   width: 90%;
@@ -267,6 +276,7 @@ main .div__section-presentation .h2__section-presentation {
   font-size: 5rem;
   font-family: "Work Sans", sans-serif;
   font-weight: 700;
+  color: #212529;
 }
 main .div__section-presentation .container__section-presentation {
   display: flex;
@@ -285,6 +295,7 @@ main .div__section-presentation .container__section-presentation .div__container
   font-size: 2.4rem;
   font-family: "Work Sans", sans-serif;
   font-weight: 900;
+  color: #212529;
 }
 main .div__section-presentation .container__section-presentation .div__container_presentation .p__container-presentation {
   margin-top: 15px;
@@ -294,6 +305,7 @@ main .div__section-presentation .container__section-presentation .div__container
   font-size: 1.8rem;
   font-family: "Merriweather", serif;
   font-weight: 300;
+  color: #212529;
 }
 
 @media screen and (max-width: 746px) {
@@ -357,6 +369,18 @@ main .div__section-presentation .container__section-presentation .div__container
   }
   main .main__section_index .img__carrucel {
     height: 80vw;
+  }
+  main .container__img-index .h2_text-gallery {
+    font-size: 3.2rem;
+  }
+  main .div__section-presentation .h2__section-presentation {
+    font-size: 3.2rem;
+  }
+  main .div__section-presentation .container__section-presentation .div__container_presentation .h3__section-presentation {
+    font-size: 2.4rem;
+  }
+  main .div__section-presentation .container__section-presentation .div__container_presentation .p__container-presentation {
+    font-size: 1.4rem;
   }
 }
 main .div__section-servicios-cart {
@@ -567,6 +591,7 @@ main .div__section-map .iframe__map {
   }
   main .div__section-map .h2_tittle-map {
     margin-top: 75px;
+    font-size: 3.2rem;
   }
 }
 main .div__container_products,
@@ -600,21 +625,25 @@ main .div__cards_products .img__card_productos {
   }
 }
 @media screen and (max-width: 568px) {
+  main .div__container_products .a__categorias_products {
+    font-size: 1.8rem;
+  }
+  main .div__container_products .nav-link {
+    font-size: 1.4rem;
+  }
   main .div__cards_products .img__card_productos {
     height: auto;
   }
 }
-.div__container_section-historia {
+main .div__container_section-historia {
   display: flex;
   justify-content: center;
   width: 100%;
 }
-
-.container__section-hitoria {
+main .div__container_section-historia .container__section-hitoria {
   width: 90%;
 }
-
-.h2__historia-bienvenida {
+main .div__container_section-historia .container__section-hitoria .h2__historia-bienvenida {
   margin-top: 40px;
   text-align: center;
   font-size: 10rem;
@@ -622,8 +651,7 @@ main .div__cards_products .img__card_productos {
   font-weight: 700;
   color: #0082FF;
 }
-
-hr {
+main .div__container_section-historia .container__section-hitoria hr {
   width: 30%;
   margin: auto;
   border: 3px solid #181719;
@@ -631,8 +659,7 @@ hr {
   box-shadow: 0 0 6px #181719;
   border-radius: 50%;
 }
-
-.p__historias-bienvenida {
+main .div__container_section-historia .container__section-hitoria .p__historias-bienvenida {
   margin-top: 50px;
   text-align: center;
   font-size: 2.4rem;
@@ -640,15 +667,13 @@ hr {
   font-weight: 400;
   color: #38302e;
 }
-
-.div__container-img-historia {
+main .div__container-img-historia {
   display: grid;
   margin-top: 110px;
   width: 100%;
   justify-items: center;
 }
-
-.div__container__historia-img {
+main .div__container-img-historia .div__container__historia-img {
   width: 65%;
   height: 80%;
   justify-items: center;
@@ -656,14 +681,12 @@ hr {
   box-shadow: 0 0 6px #181719;
   background: #181719;
 }
-
-.img__picture-historia {
+main .div__container-img-historia .div__container__historia-img .img__picture-historia {
   width: 100%;
   height: 100%;
   padding: 1%;
 }
-
-.h__section_principios-historia {
+main .h__section_principios-historia {
   margin-bottom: 20px;
   font-size: 5rem;
   font-family: "Work Sans", sans-serif;
@@ -671,8 +694,7 @@ hr {
   color: #38302e;
   text-align: center;
 }
-
-.p__section_principios-historia {
+main .p__section_principios-historia {
   margin-top: 30px;
   padding: 0 10% 0 10%;
   font-size: 2.4rem;
@@ -681,7 +703,136 @@ hr {
   color: #38302e;
   text-align: center;
 }
+main .container {
+  width: 70%;
+}
+main .container .card-columns {
+  -moz-column-count: 2;
+       column-count: 2;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+main .container .card-columns .card-img {
+  width: 100%;
+  height: 350px;
+}
+main .container .card-columns .card-img-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}
+main .container .card-columns .card-img-overlay .h4Title-nosotros {
+  font-size: 3.2rem;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 700;
+  color: #e6e8e6;
+}
+main .container .card-columns .card-img-overlay .card-text {
+  font-size: 1.8rem;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  color: #e6e8e6;
+}
+main .container .card-columns .card {
+  margin: 0 0 20px 0;
+}
+main .container .card-columns h4 {
+  font-size: 22px;
+}
+main .section__siguenos {
+  width: 100%;
+  height: auto;
+}
+main .section__siguenos .hr__siguenos {
+  width: 90%;
+  margin: auto;
+  margin-top: 70px;
+  border: 3px solid #181719;
+  opacity: 1;
+  box-shadow: 0 0 6px #181719;
+  border-radius: 50%;
+}
+main .section__siguenos .h2__Title-siguenos {
+  margin-top: 70px;
+  padding: 0 10% 0 10%;
+  font-size: 10rem;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 700;
+  color: #38302e;
+  text-align: center;
+}
+main .section__siguenos .h3__Title-siguenos {
+  margin-top: 70px;
+  padding: 0 10% 0 10%;
+  font-size: 5rem;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  color: #38302e;
+  text-align: center;
+}
+main .section__siguenos .h4__Title-siguenos {
+  margin-top: 70px;
+  margin-bottom: 60px;
+  padding: 0 10% 0 10%;
+  font-size: 3.2rem;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  color: #38302e;
+  text-align: center;
+}
 
+@media screen and (max-width: 1023px) {
+  main .div__container_section-historia .container__section-hitoria .h2__historia-bienvenida {
+    font-size: 6rem;
+    font-weight: 900;
+  }
+  main .div__container_section-historia .container__section-hitoria .p__historias-bienvenida {
+    font-size: 1.8rem;
+  }
+  main .h__section_principios-historia {
+    font-size: 3.2rem;
+  }
+  main .p__section_principios-historia {
+    font-size: 1.8rem;
+  }
+  main .section__siguenos .h2__Title-siguenos {
+    font-size: 6rem;
+  }
+  main .section__siguenos .h3__Title-siguenos {
+    font-size: 3.2rem;
+  }
+  main .section__siguenos .h4__Title-siguenos {
+    font-size: 2.4rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  main .div__container_section-historia .container__section-hitoria .h2__historia-bienvenida {
+    font-size: 4.2rem;
+  }
+  main .div__container_section-historia .container__section-hitoria .p__historias-bienvenida {
+    font-size: 1.8rem;
+  }
+  main .container {
+    width: 100%;
+  }
+  main .container .card-columns {
+    -moz-column-count: 1;
+         column-count: 1;
+  }
+  main .container .card-columns .card-img-overlay .h4Title-nosotros {
+    font-size: 2.4rem;
+  }
+  main .container .card-columns .card-img-overlay .card-text {
+    font-size: 1.4rem;
+  }
+  main .section__siguenos .h2__Title-siguenos {
+    font-size: 4.2rem;
+  }
+  main .section__siguenos .h3__Title-siguenos {
+    font-size: 2.4rem;
+  }
+  main .section__siguenos .h4__Title-siguenos {
+    font-size: 1.8rem;
+  }
+}
 main {
   background: #FCF8FF;
 }
