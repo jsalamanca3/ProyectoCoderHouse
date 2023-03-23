@@ -3,32 +3,45 @@ footer {
     flex-direction: column;
     width: 100%;
     height: auto;
-    background-color: $color-background-footer;
     align-items: center;
+    background-color: $color-background-footer;
     .container__footer {
         display: flex;
-        justify-content: center;
         width: 80%;
         height: 60px;
         margin-top: 15px;
+        justify-content: center;
         .footer__ul-li {
             display: flex;
             flex-direction: row;
-            justify-content: space-around;
             width: 70%;
             height: auto;
+            justify-content: space-around;
             align-items: center;
             .footer__li_a-links {
                 list-style: none;
                 .li__a-links {
                     text-decoration: none;
+                    /* uso del map */
                     .fa-brands, .fab {
-                        font-size: 4.5rem;
+                        font-size: map-get($redes-size, links);
                         color: $color-btn-red-social;
                     }
-                    .fa-brands:hover {
-                        color: #FF230E;
-                        font-size: 6rem;
+                    .fa-github:hover {
+                        color: map-get($redes, github);
+                        font-size: map-get($redes-size, linkshover);
+                    }
+                    .fa-facebook:hover {
+                        color: map-get($redes, facebook);
+                        font-size: map-get($redes-size, linkshover);
+                    }
+                    .fa-linkedin:hover {
+                        color: map-get($redes, linkedin);
+                        font-size: map-get($redes-size, linkshover);
+                    }
+                    .fa-youtube:hover {
+                        color: map-get($redes, youtube);
+                        font-size: map-get($redes-size, linkshover);
                     }
                 }
                 .li__a-links:hover {
@@ -42,10 +55,7 @@ footer {
     }
     .footer__p {
         margin-bottom: 0.5%;
-        font-size: $letter-medium;
-        font-family: $font-letter;
-        font-weight: $font-weight-letter-regular;
-        color: $color-letter-li;
+        @include letter-h-p($letter-medium,$font-letter,$font-weight-letter-regular,$color-letter-li);
     }
 }
 

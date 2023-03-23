@@ -1,20 +1,21 @@
+@import "mixin.scss";
 main {
     .div__section-servicios-cart {
         display: flex;
-        justify-content: center;
-        align-items: center;
         width: 100%;
         height: auto;
+        justify-content: center;
+        align-items: center;
         .section__servicios {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             grid-template-rows: 1fr;
             grid-column-gap: 10px;
-            justify-content: space-around;
             width: 90%;
             height: auto;
             margin-top: 50px;
             margin-bottom: 110px;
+            justify-content: space-around;
             .div_servicios {
                 grid-area: 1 / 1 / 2 / 2;
                 display: grid;
@@ -22,25 +23,18 @@ main {
                 height: auto;
                 align-content: space-around;
                 .h2__servicios {
-                    font-size: $title-ex;
-                    font-family: $font-title;
-                    font-weight: $font-weight-title-regular;
+                    @include letter-h-p($title-ex,$font-title,$font-weight-title-regular,$color-title);
                 }
                 .p__servicios {
+                    @include letter-h-p($letter-large,$font-letter,$font-weight-letter-light,$color-letter);
                     margin-left: 5px;
-                    font-size: $letter-large;
-                    font-family: $font-letter;
-                    font-weight: $font-weight-letter-light;
                 }
                 .btn__servicios_concer-mas {
+                    @include letter-h-p($letter-large,$font-letter,$font-weight-title-medium,$color-letter-card);
                     width: 60%;
                     height: 60px;
                     background-color: $color-background-cards-photos;
                     border: $color-btn-conocer-mas;
-                    font-size: $letter-large;
-                    font-family: $font-letter;
-                    font-weight: $font-weight-title-medium;
-                    color: $color-letter-card;
                     box-shadow: 0 0 6px #181719;
                     a {
                         text-decoration: none;
@@ -93,30 +87,21 @@ main {
                         justify-content: flex-end;
                         padding: 2%;
                         .h3__tittle-cart {
-                            font-size: $title-large;
-                            font-family: $font-title;
-                            font-weight: $font-weight-title-light;
-                            color: $color-letter-card;
+                            @include letter-h-p($title-large,$font-title,$font-weight-title-light,$color-letter-card);
                             margin-bottom: 0;
                         }
                         .p__tittle-cart {
+                            @include letter-h-p($letter-medium,$font-letter,$font-weight-letter-light-italic,$color-letter-card);
                             margin-top: 5%;
-                            font-size: $letter-medium;
-                            font-family: $font-letter;
-                            font-weight: $font-weight-letter-light-italic;
-                            color: $color-letter-card;
                         }
                     }
                     .div__text-description--cart{
                         grid-area: 2 / 1 / 3 / 3;
                         padding: 2%;
                         .p__description-cart {
+                            @include letter-h-p($letter-medium,$font-letter,$font-weight-letter-light-italic,$color-letter-card);
                             margin-left: 2.5%;
-                            font-size: $letter-medium;
-                            font-family: $font-letter;
-                            font-weight: $font-weight-letter-light-italic;
                             font-style: italic;
-                            color: $color-letter-card;
                             text-align: justify;
                         }
                     }
@@ -144,18 +129,16 @@ main {
     .div__section-map {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
         width: 100%;
         height: auto;
+        align-items: center;
+        justify-content: center;
         .h2_tittle-map {
+            @include letter-h-p($title-haiger,$font-title,$font-weight-title-medium,$color-title);
             width: 95%;
             margin-top: 50px;
             margin-bottom: 40px;
             text-align: center;
-            font-size: $title-haiger;
-            font-family: $font-title;
-            font-weight: $font-weight-title-medium;
         }
         .iframe__map {
             width: 90%;

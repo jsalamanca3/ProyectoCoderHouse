@@ -8,10 +8,7 @@ main {
             .h2__historia-bienvenida {
                 margin-top: 40px;
                 text-align: center;
-                font-size: $title-historia;
-                font-family: $font-letter-historia;
-                font-weight: $font-weight-title-regular;
-                color: $color-letter-historia;
+                @include letter-h-p($title-historia,$font-letter-historia,$font-weight-title-medium,$color-letter-historia);
             }
             hr {
                 width: 30%;
@@ -22,20 +19,16 @@ main {
                 border-radius: 50%;
             }
             .p__historias-bienvenida {
-                margin-top: 50px;
-                text-align: center;
-                font-size: $title-large;
-                font-family: $font-title;
-                font-weight: $font-weight-historia;
-                color: $color-letter;
+                @extend .h2__historia-bienvenida;
+                @include letter-h-p($title-large,$font-title,$font-weight-historia,$color-letter);
             }
         }
     }
     .div__container-img-historia {
         display: grid;
-        margin-top: 110px;
         width: 100%;
         justify-items: center;
+        align-items: center;
         .div__container__historia-img {
             width: 65%;
             height: 80%;
@@ -51,21 +44,15 @@ main {
         }
     }
     .h__section_principios-historia {
+        @include letter-h-p($title-haiger,$font-title,$font-weight-historia,$color-letter);
         margin-bottom: 20px;
-        font-size: $title-haiger;
-        font-family: $font-title;
-        font-weight: $font-weight-historia;
-        color: $color-letter;
         text-align: center;
     }
     .p__section_principios-historia {
+        @extend .h__section_principios-historia;
         margin-top: 30px;
         padding: 0 10% 0 10%;
         font-size: $title-large;
-        font-family: $font-title;
-        font-weight: $font-weight-historia;
-        color: $color-letter;
-        text-align: center;
     }
     .container {
         width: 70%;
@@ -79,16 +66,12 @@ main {
             .card-img-overlay {
                 background: rgba(0, 0, 0, 0.3);
                 .h4Title-nosotros {
-                    font-size: $title-ex;
-                    font-family: $font-title;
-                    font-weight: $font-weight-title-regular;
-                    color: $color-letter-card;
+                    @include letter-h-p($title-ex,$font-title,$font-weight-title-regular,$color-letter-card);
                 }
                 .card-text {
+                    @extend .h4Title-nosotros;
                     font-size: $letter-large;
-                    font-family: $font-title;
                     font-weight: $font-weight-historia;
-                    color: $color-letter-card;
                 }
             }
         }
@@ -112,32 +95,21 @@ main {
             border-radius: 50%;
         }
         .h2__Title-siguenos {
+            @include letter-h-p($title-historia,$font-title,$font-weight-title-regular,$color-letter);
             margin-top: 70px;
             padding: 0 10% 0 10%;
-            font-size: $title-historia;
-            font-family: $font-title;
-            font-weight: $font-weight-title-regular;
-            color: $color-letter;
             text-align: center;
         }
         .h3__Title-siguenos {
-            margin-top: 70px;
-            padding: 0 10% 0 10%;
+            @extend .h2__Title-siguenos;
             font-size: $title-haiger;
-            font-family: $font-title;
             font-weight: $font-weight-title-light;
-            color: $color-letter;
-            text-align: center;
         }
         .h4__Title-siguenos {
-            margin-top: 70px;
+            @extend .h2__Title-siguenos;
             margin-bottom: 60px;
-            padding: 0 10% 0 10%;
             font-size: $title-ex;
-            font-family: $font-title;
             font-weight: $font-weight-title-light;
-            color: $color-letter;
-            text-align: center;
         }
     }
 
@@ -149,7 +121,6 @@ main {
             .container__section-hitoria {
                 .h2__historia-bienvenida {
                     font-size: 6.0rem;
-                    font-weight: $font-weight-title-medium;
                 }
                 .p__historias-bienvenida {
                     font-size: $title-medium;

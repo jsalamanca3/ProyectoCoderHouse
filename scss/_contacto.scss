@@ -4,14 +4,12 @@ main {
         margin-top: 20px;
         margin-bottom: 30px;
         legend {
-            font-size: $title-large;
-            font-family: $font-title;
-            font-weight: $font-weight-title-regular;
+            @include letter-h-p($title-large,$font-title,$font-weight-title-regular,$color-contacto);
         }
         .header {
-            color: $color-contacto;
-            font-size: 25px;
             padding: 10px;
+            font-size: 25px;
+            color: $color-contacto;
         }
         .bigicon {
             font-size: 25px;
@@ -36,14 +34,10 @@ main {
     }
     div .text__center {
         .h2__form_horario {
-            font-size: $title-large;
-            font-family: $font-title;
-            font-weight: $font-weight-title-regular;
+            @include letter-h-p($title-large,$font-title,$font-weight-title-regular,$color-title);
         }
         p {
-            font-size: $letter-medium;
-            font-family: $font-letter;
-            font-weight: $font-weight-letter-regular;
+            @include letter-h-p($letter-medium,$font-letter,$font-weight-letter-regular,$color-text);
         }
     }
     footer{
@@ -55,12 +49,12 @@ main {
 @media screen and (max-width: 767px) {
     main {
         .container__form_contacto {
-            width: 90% !important;
+            width: 90%;
         }
         div .CajaDiv__contacto-textForm {
-            text-align: center;
             width: 100%;
             margin-bottom: 25px;
+            text-align: center;
         }
     }
 }

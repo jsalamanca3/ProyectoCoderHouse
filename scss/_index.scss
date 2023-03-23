@@ -6,32 +6,29 @@ main {
             margin-top: 15px;
         }
         .img__carrucel {
-            width: 100%;
-            height: 30vw;
+            @extend .container__carrucel;
+            margin-top: 0px;
         }
     }
     .container__img-index {
+        display: flex;
+        flex-direction: column;
         width: 100%;
         height: auto;
         margin-top: 70px;
-        display: flex;
-        flex-direction: column;
         align-items: center;
         .h2_text-gallery {
             margin-top: 10px;
             margin-bottom: 15px;
-            font-size: $title-haiger;
-            font-family: $font-title;
-            font-weight: $font-weight-title-medium;
-            color: $color-text;
+            @include letter-h-p($title-haiger,$font-title,$font-weight-title-medium,$color-text);
         }
         .div___container-gallery {
-            width: 90%;
-            height: auto;
             display: grid;
             grid-template-areas:
             "primerafila"
             "segundafila";
+            width: 90%;
+            height: auto;
             .div__gallery-img {
                 grid-area: primerafila;
                 display: grid;
@@ -77,16 +74,13 @@ main {
     .div__section-presentation {
         display: flex;
         flex-direction: column;
-        align-items: center;
         width: 100%;
         height: auto;
+        align-items: center;
         .h2__section-presentation {
             margin-top: 40px;
             margin-bottom: 15px;
-            font-size: $title-haiger;
-            font-family: $font-title;
-            font-weight: $font-weight-title-regular;
-            color: $color-text;
+            @include letter-h-p($title-haiger,$font-title,$font-weight-title-regular,$color-text);
         }
         .container__section-presentation {
             display: flex;
@@ -100,20 +94,16 @@ main {
                 width: 45%;
                 .h3__section-presentation {
                     margin-top: 15px;
-                    font-size: $title-large;
-                    font-family: $font-title;
-                    font-weight: $font-weight-title-medium;
-                    color: $color-text;
+                    @include letter-h-p($title-large,$font-title,$font-weight-title-medium,$color-text);
                 }
                 .p__container-presentation {
-                    margin-top: 15px;
+                    @extend .h2__section-presentation;
                     margin-left: 15px;
                     margin-bottom: 50px;
                     text-align: justify;
                     font-size: $letter-large;
                     font-family: $font-letter;
                     font-weight: $font-weight-letter-light;
-                    color: $color-text;
                 }
             }
         }

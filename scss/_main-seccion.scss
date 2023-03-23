@@ -13,25 +13,21 @@ main {
                 .h1__section-servicios {
                     margin-top: 25px;
                     margin-bottom: 15px;
-                    font-size: $title-haiger;
-                    font-family: $font-title;
-                    font-weight: $font-weight-title-medium;
+                    @include letter-h-p($title-haiger,$font-title,$font-weight-title-medium,$color-title);
                 }
                 .ul__section-li {
                     display: flex;
                     flex-direction: row;
-                    gap: 12px;
-                    list-style: none;
-                    font-size: $letter-large;
-                    font-family: $font-letter;
-                    font-weight: $font-weight-letter-regular;
                     margin-bottom: 10px;
+                    gap: 12px;
+                    @include letter-h-p($letter-large,$font-letter,$font-weight-letter-regular,$color-header-links);
                     border-bottom: 2px solid #666;
+                    list-style: none;
                     li a {
                         text-decoration: none;
                         color: $color-letter-a;
                         span .material-symbols-outlined {
-                            color: #BDBDBD;
+                            color: $color-header-links;
                         }
                     }
                     li a:hover {

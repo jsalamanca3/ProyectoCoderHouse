@@ -33,6 +33,7 @@ $color-btn-red-social: #f0ffff;
 $color-btn-conocer-mas: #325082;
 $color-nav-li-hover: #027bce;
 $color-nav-link: #00487c;
+$color-header-links: #BDBDBD;
 $color-letter-btn: #1b2021;
 $color-letter-historia: #0082FF;
 $color-hr: #008BE4;
@@ -44,16 +45,20 @@ $color-background-sections: #FCF8FF;
 $color-background-sections-otros: #B0A8B9;
 $color-background-cards-photos: #181719;
 
+/* se incluye el map en el css del footer */
+$redes:(
+    github: #110b11,
+    facebook: #2541b2,
+    linkedin: #006494,
+    youtube: #FF230E
+);
+$redes-size:(
+    links: 4.5rem,
+    linkshover: 6rem
+);
 
-/* método get
-$fuentes-size:(
-    thin: 100,
-    light: 300,
-)
-.gg: map-get($stilos, color)
 
-@extend nombre clase;
-backgroud: #666
+/*
 
 Mixin
 $mixin flex-direction-center($direction,$justify-center) {

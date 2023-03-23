@@ -3,9 +3,7 @@ main {
     .a__categorias_products,
     .div__cards_products,
     .p__products_information {
-        font-size: $letter-large;
-        font-family: $font-letter;
-        font-weight: $font-weight-letter-regular;
+        @include letter-h-p($letter-large,$font-letter,$font-weight-letter-regular,$color-text);
         text-align: justify;
     }
     div {

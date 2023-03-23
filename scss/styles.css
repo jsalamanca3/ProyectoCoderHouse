@@ -1,13 +1,6 @@
 @charset "UTF-8";
-/* método get
-$fuentes-size:(
-    thin: 100,
-    light: 300,
-)
-.gg: map-get($stilos, color)
-
-@extend nombre clase;
-backgroud: #666
+/* se incluye el map en el css del footer */
+/*
 
 Mixin
 $mixin flex-direction-center($direction,$justify-center) {
@@ -55,57 +48,55 @@ html {
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
 }
 
-header {
-  background-color: #344A53;
+header, header .container__header-nav-img {
   width: 100%;
   height: 160px;
+  background-color: #344A53;
 }
 header .container__header-nav-img {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  height: 160px;
   background-image: url(../assets/image/Artistic\ Cloud.jpg);
 }
 header .container__header-nav-img .header__img-logo {
   display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   height: 50px;
   margin-top: 30px;
+  justify-content: center;
+  align-items: center;
 }
 header .container__header-nav-img .header__img-logo .img__logo-beta {
-  margin-top: 40px;
   width: 300px;
   height: auto;
+  margin-top: 40px;
 }
 header .container__header-nav-img .nav__container-links {
   display: flex;
-  justify-content: space-around;
   width: 100%;
   height: 25px;
+  justify-content: space-around;
 }
 header .container__header-nav-img .nav__container-links .nav__ul-links {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
   width: 70%;
   margin-top: 50px;
+  justify-content: space-evenly;
+  align-items: center;
 }
 header .container__header-nav-img .nav__container-links .nav__ul-links .ul__li-links {
-  font-family: "Merriweather", serif;
   font-size: 1.8rem;
+  font-family: "Merriweather", serif;
   font-weight: 700;
+  color: #BDBDBD;
   list-style: none;
 }
-header .container__header-nav-img .nav__container-links .nav__ul-links .ul__li-links .li__a-links {
-  text-decoration: none;
+header .container__header-nav-img .nav__container-links .nav__ul-links .ul__li-links .li__a-links, header .container__header-nav-img .nav__container-links .nav__ul-links .ul__li-links .li__a-links:hover {
   color: #BDBDBD;
+  text-decoration: none;
 }
 header .container__header-nav-img .nav__container-links .nav__ul-links .ul__li-links .li__a-links:hover {
-  text-decoration: none;
   color: #0e6ba8;
 }
 
@@ -120,7 +111,7 @@ header .container__header-nav-img .nav__container-links .nav__ul-links .ul__li-l
   }
 }
 main {
-  background-color: color-background-sections;
+  background-color: #FCF8FF;
 }
 
 /* Corresponde al main de la section de navegación */
@@ -143,17 +134,19 @@ main .section__main-servicios .div__section-servicios .div__section-ul .h1__sect
   font-size: 5rem;
   font-family: "Work Sans", sans-serif;
   font-weight: 900;
+  color: #1b2021;
 }
 main .section__main-servicios .div__section-servicios .div__section-ul .ul__section-li {
   display: flex;
   flex-direction: row;
+  margin-bottom: 10px;
   gap: 12px;
-  list-style: none;
   font-size: 1.8rem;
   font-family: "Merriweather", serif;
   font-weight: 400;
-  margin-bottom: 10px;
+  color: #BDBDBD;
   border-bottom: 2px solid #666;
+  list-style: none;
 }
 main .section__main-servicios .div__section-servicios .div__section-ul .ul__section-li li a {
   text-decoration: none;
@@ -180,21 +173,20 @@ main .section__main-servicios .div__section-servicios .div__section-ul .ul__sect
     font-size: 3.8rem;
   }
 }
-main .main__section_index .container__carrucel {
+main .main__section_index .container__carrucel, main .main__section_index .img__carrucel {
   width: 100%;
   height: 30vw;
   margin-top: 15px;
 }
 main .main__section_index .img__carrucel {
-  width: 100%;
-  height: 30vw;
+  margin-top: 0px;
 }
 main .container__img-index {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   height: auto;
   margin-top: 70px;
-  display: flex;
-  flex-direction: column;
   align-items: center;
 }
 main .container__img-index .h2_text-gallery {
@@ -206,10 +198,10 @@ main .container__img-index .h2_text-gallery {
   color: #212529;
 }
 main .container__img-index .div___container-gallery {
-  width: 90%;
-  height: auto;
   display: grid;
   grid-template-areas: "primerafila" "segundafila";
+  width: 90%;
+  height: auto;
 }
 main .container__img-index .div___container-gallery .div__gallery-img {
   grid-area: primerafila;
@@ -266,11 +258,11 @@ main .container__img-index .div___container-gallery .div__gallery_img2 .img-caja
 main .div__section-presentation {
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 100%;
   height: auto;
+  align-items: center;
 }
-main .div__section-presentation .h2__section-presentation {
+main .div__section-presentation .h2__section-presentation, main .div__section-presentation .container__section-presentation .div__container_presentation .p__container-presentation {
   margin-top: 40px;
   margin-bottom: 15px;
   font-size: 5rem;
@@ -298,18 +290,16 @@ main .div__section-presentation .container__section-presentation .div__container
   color: #212529;
 }
 main .div__section-presentation .container__section-presentation .div__container_presentation .p__container-presentation {
-  margin-top: 15px;
   margin-left: 15px;
   margin-bottom: 50px;
   text-align: justify;
   font-size: 1.8rem;
   font-family: "Merriweather", serif;
   font-weight: 300;
-  color: #212529;
 }
 
 @media screen and (max-width: 746px) {
-  main .main__section_index .container__carrucel {
+  main .main__section_index .container__carrucel, main .main__section_index .img__carrucel {
     height: 60vw;
   }
   main .main__section_index .img__carrucel {
@@ -364,7 +354,7 @@ main .div__section-presentation .container__section-presentation .div__container
   }
 }
 @media screen and (max-width: 425px) {
-  main .main__section_index .container__carrucel {
+  main .main__section_index .container__carrucel, main .main__section_index .img__carrucel {
     height: 80vw;
   }
   main .main__section_index .img__carrucel {
@@ -373,7 +363,7 @@ main .div__section-presentation .container__section-presentation .div__container
   main .container__img-index .h2_text-gallery {
     font-size: 3.2rem;
   }
-  main .div__section-presentation .h2__section-presentation {
+  main .div__section-presentation .h2__section-presentation, main .div__section-presentation .container__section-presentation .div__container_presentation .p__container-presentation {
     font-size: 3.2rem;
   }
   main .div__section-presentation .container__section-presentation .div__container_presentation .h3__section-presentation {
@@ -385,21 +375,21 @@ main .div__section-presentation .container__section-presentation .div__container
 }
 main .div__section-servicios-cart {
   display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   height: auto;
+  justify-content: center;
+  align-items: center;
 }
 main .div__section-servicios-cart .section__servicios {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 10px;
-  justify-content: space-around;
   width: 90%;
   height: auto;
   margin-top: 50px;
   margin-bottom: 110px;
+  justify-content: space-around;
 }
 main .div__section-servicios-cart .section__servicios .div_servicios {
   grid-area: 1/1/2/2;
@@ -412,22 +402,24 @@ main .div__section-servicios-cart .section__servicios .div_servicios .h2__servic
   font-size: 3.2rem;
   font-family: "Work Sans", sans-serif;
   font-weight: 700;
+  color: #1b2021;
 }
 main .div__section-servicios-cart .section__servicios .div_servicios .p__servicios {
-  margin-left: 5px;
   font-size: 1.8rem;
   font-family: "Merriweather", serif;
   font-weight: 300;
+  color: #38302e;
+  margin-left: 5px;
 }
 main .div__section-servicios-cart .section__servicios .div_servicios .btn__servicios_concer-mas {
-  width: 60%;
-  height: 60px;
-  background-color: #181719;
-  border: #325082;
   font-size: 1.8rem;
   font-family: "Merriweather", serif;
   font-weight: 900;
   color: #e6e8e6;
+  width: 60%;
+  height: 60px;
+  background-color: #181719;
+  border: #325082;
   box-shadow: 0 0 6px #181719;
 }
 main .div__section-servicios-cart .section__servicios .div_servicios .btn__servicios_concer-mas a {
@@ -489,23 +481,23 @@ main .div__section-servicios-cart .section__servicios .div__servicios-img .div__
   margin-bottom: 0;
 }
 main .div__section-servicios-cart .section__servicios .div__servicios-img .div__cart-img .div__cart-description--work .p__tittle-cart {
-  margin-top: 5%;
   font-size: 1.4rem;
   font-family: "Merriweather", serif;
   font-weight: 300;
   color: #e6e8e6;
+  margin-top: 5%;
 }
 main .div__section-servicios-cart .section__servicios .div__servicios-img .div__cart-img .div__text-description--cart {
   grid-area: 2/1/3/3;
   padding: 2%;
 }
 main .div__section-servicios-cart .section__servicios .div__servicios-img .div__cart-img .div__text-description--cart .p__description-cart {
-  margin-left: 2.5%;
   font-size: 1.4rem;
   font-family: "Merriweather", serif;
   font-weight: 300;
-  font-style: italic;
   color: #e6e8e6;
+  margin-left: 2.5%;
+  font-style: italic;
   text-align: justify;
 }
 main .div__section-servicios-cart .inversa__section_servicios {
@@ -526,19 +518,20 @@ main .div__section-servicios-cart .inversa__section_servicios .inversa__div_serv
 main .div__section-map {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
   width: 100%;
   height: auto;
+  align-items: center;
+  justify-content: center;
 }
 main .div__section-map .h2_tittle-map {
+  font-size: 5rem;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 900;
+  color: #1b2021;
   width: 95%;
   margin-top: 50px;
   margin-bottom: 40px;
   text-align: center;
-  font-size: 5rem;
-  font-family: "Work Sans", sans-serif;
-  font-weight: 900;
 }
 main .div__section-map .iframe__map {
   width: 90%;
@@ -601,6 +594,7 @@ main .p__products_information {
   font-size: 1.8rem;
   font-family: "Merriweather", serif;
   font-weight: 400;
+  color: #212529;
   text-align: justify;
 }
 main div .p__products_information {
@@ -643,12 +637,12 @@ main .div__container_section-historia {
 main .div__container_section-historia .container__section-hitoria {
   width: 90%;
 }
-main .div__container_section-historia .container__section-hitoria .h2__historia-bienvenida {
+main .div__container_section-historia .container__section-hitoria .h2__historia-bienvenida, main .div__container_section-historia .container__section-hitoria .p__historias-bienvenida {
   margin-top: 40px;
   text-align: center;
   font-size: 10rem;
   font-family: "Josefin Sans", sans-serif;
-  font-weight: 700;
+  font-weight: 900;
   color: #0082FF;
 }
 main .div__container_section-historia .container__section-hitoria hr {
@@ -660,8 +654,6 @@ main .div__container_section-historia .container__section-hitoria hr {
   border-radius: 50%;
 }
 main .div__container_section-historia .container__section-hitoria .p__historias-bienvenida {
-  margin-top: 50px;
-  text-align: center;
   font-size: 2.4rem;
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
@@ -669,9 +661,9 @@ main .div__container_section-historia .container__section-hitoria .p__historias-
 }
 main .div__container-img-historia {
   display: grid;
-  margin-top: 110px;
   width: 100%;
   justify-items: center;
+  align-items: center;
 }
 main .div__container-img-historia .div__container__historia-img {
   width: 65%;
@@ -686,22 +678,18 @@ main .div__container-img-historia .div__container__historia-img .img__picture-hi
   height: 100%;
   padding: 1%;
 }
-main .h__section_principios-historia {
-  margin-bottom: 20px;
+main .h__section_principios-historia, main .p__section_principios-historia {
   font-size: 5rem;
   font-family: "Work Sans", sans-serif;
   font-weight: 400;
   color: #38302e;
+  margin-bottom: 20px;
   text-align: center;
 }
 main .p__section_principios-historia {
   margin-top: 30px;
   padding: 0 10% 0 10%;
   font-size: 2.4rem;
-  font-family: "Work Sans", sans-serif;
-  font-weight: 400;
-  color: #38302e;
-  text-align: center;
 }
 main .container {
   width: 70%;
@@ -719,7 +707,7 @@ main .container .card-columns .card-img {
 main .container .card-columns .card-img-overlay {
   background: rgba(0, 0, 0, 0.3);
 }
-main .container .card-columns .card-img-overlay .h4Title-nosotros {
+main .container .card-columns .card-img-overlay .h4Title-nosotros, main .container .card-columns .card-img-overlay .card-text {
   font-size: 3.2rem;
   font-family: "Work Sans", sans-serif;
   font-weight: 700;
@@ -727,9 +715,7 @@ main .container .card-columns .card-img-overlay .h4Title-nosotros {
 }
 main .container .card-columns .card-img-overlay .card-text {
   font-size: 1.8rem;
-  font-family: "Work Sans", sans-serif;
   font-weight: 400;
-  color: #e6e8e6;
 }
 main .container .card-columns .card {
   margin: 0 0 20px 0;
@@ -750,50 +736,39 @@ main .section__siguenos .hr__siguenos {
   box-shadow: 0 0 6px #181719;
   border-radius: 50%;
 }
-main .section__siguenos .h2__Title-siguenos {
-  margin-top: 70px;
-  padding: 0 10% 0 10%;
+main .section__siguenos .h2__Title-siguenos, main .section__siguenos .h4__Title-siguenos, main .section__siguenos .h3__Title-siguenos {
   font-size: 10rem;
   font-family: "Work Sans", sans-serif;
   font-weight: 700;
   color: #38302e;
+  margin-top: 70px;
+  padding: 0 10% 0 10%;
   text-align: center;
 }
 main .section__siguenos .h3__Title-siguenos {
-  margin-top: 70px;
-  padding: 0 10% 0 10%;
   font-size: 5rem;
-  font-family: "Work Sans", sans-serif;
   font-weight: 500;
-  color: #38302e;
-  text-align: center;
 }
 main .section__siguenos .h4__Title-siguenos {
-  margin-top: 70px;
   margin-bottom: 60px;
-  padding: 0 10% 0 10%;
   font-size: 3.2rem;
-  font-family: "Work Sans", sans-serif;
   font-weight: 500;
-  color: #38302e;
-  text-align: center;
 }
 
 @media screen and (max-width: 1023px) {
-  main .div__container_section-historia .container__section-hitoria .h2__historia-bienvenida {
+  main .div__container_section-historia .container__section-hitoria .h2__historia-bienvenida, main .div__container_section-historia .container__section-hitoria .p__historias-bienvenida {
     font-size: 6rem;
-    font-weight: 900;
   }
   main .div__container_section-historia .container__section-hitoria .p__historias-bienvenida {
     font-size: 1.8rem;
   }
-  main .h__section_principios-historia {
+  main .h__section_principios-historia, main .p__section_principios-historia {
     font-size: 3.2rem;
   }
   main .p__section_principios-historia {
     font-size: 1.8rem;
   }
-  main .section__siguenos .h2__Title-siguenos {
+  main .section__siguenos .h2__Title-siguenos, main .section__siguenos .h3__Title-siguenos, main .section__siguenos .h4__Title-siguenos {
     font-size: 6rem;
   }
   main .section__siguenos .h3__Title-siguenos {
@@ -804,7 +779,7 @@ main .section__siguenos .h4__Title-siguenos {
   }
 }
 @media screen and (max-width: 767px) {
-  main .div__container_section-historia .container__section-hitoria .h2__historia-bienvenida {
+  main .div__container_section-historia .container__section-hitoria .h2__historia-bienvenida, main .div__container_section-historia .container__section-hitoria .p__historias-bienvenida {
     font-size: 4.2rem;
   }
   main .div__container_section-historia .container__section-hitoria .p__historias-bienvenida {
@@ -817,13 +792,13 @@ main .section__siguenos .h4__Title-siguenos {
     -moz-column-count: 1;
          column-count: 1;
   }
-  main .container .card-columns .card-img-overlay .h4Title-nosotros {
+  main .container .card-columns .card-img-overlay .h4Title-nosotros, main .container .card-columns .card-img-overlay .card-text {
     font-size: 2.4rem;
   }
   main .container .card-columns .card-img-overlay .card-text {
     font-size: 1.4rem;
   }
-  main .section__siguenos .h2__Title-siguenos {
+  main .section__siguenos .h2__Title-siguenos, main .section__siguenos .h3__Title-siguenos, main .section__siguenos .h4__Title-siguenos {
     font-size: 4.2rem;
   }
   main .section__siguenos .h3__Title-siguenos {
@@ -844,11 +819,12 @@ main .container__form_contacto legend {
   font-size: 2.4rem;
   font-family: "Work Sans", sans-serif;
   font-weight: 700;
+  color: #36A0FF;
 }
 main .container__form_contacto .header {
-  color: #36A0FF;
-  font-size: 25px;
   padding: 10px;
+  font-size: 25px;
+  color: #36A0FF;
 }
 main .container__form_contacto .bigicon {
   font-size: 25px;
@@ -879,11 +855,13 @@ main div .text__center .h2__form_horario {
   font-size: 2.4rem;
   font-family: "Work Sans", sans-serif;
   font-weight: 700;
+  color: #1b2021;
 }
 main div .text__center p {
   font-size: 1.4rem;
   font-family: "Merriweather", serif;
   font-weight: 400;
+  color: #212529;
 }
 main footer {
   margin-top: 50px;
@@ -891,12 +869,12 @@ main footer {
 
 @media screen and (max-width: 767px) {
   main .container__form_contacto {
-    width: 90% !important;
+    width: 90%;
   }
   main div .CajaDiv__contacto-textForm {
-    text-align: center;
     width: 100%;
     margin-bottom: 25px;
+    text-align: center;
   }
 }
 footer {
@@ -904,39 +882,52 @@ footer {
   flex-direction: column;
   width: 100%;
   height: auto;
-  background-color: #4B4453;
   align-items: center;
+  background-color: #4B4453;
 }
 footer .container__footer {
   display: flex;
-  justify-content: center;
   width: 80%;
   height: 60px;
   margin-top: 15px;
+  justify-content: center;
 }
 footer .container__footer .footer__ul-li {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   width: 70%;
   height: auto;
+  justify-content: space-around;
   align-items: center;
 }
 footer .container__footer .footer__ul-li .footer__li_a-links {
   list-style: none;
 }
-footer .container__footer .footer__ul-li .footer__li_a-links .li__a-links {
+footer .container__footer .footer__ul-li .footer__li_a-links .li__a-links, footer .container__footer .footer__ul-li .footer__li_a-links header .container__header-nav-img .nav__container-links .nav__ul-links .ul__li-links .li__a-links:hover, header .container__header-nav-img .nav__container-links .nav__ul-links .ul__li-links footer .container__footer .footer__ul-li .footer__li_a-links .li__a-links:hover {
   text-decoration: none;
+  /* uso del map */
 }
-footer .container__footer .footer__ul-li .footer__li_a-links .li__a-links .fa-brands, footer .container__footer .footer__ul-li .footer__li_a-links .li__a-links .fab {
+footer .container__footer .footer__ul-li .footer__li_a-links .li__a-links .fa-brands, footer .container__footer .footer__ul-li .footer__li_a-links header .container__header-nav-img .nav__container-links .nav__ul-links .ul__li-links .li__a-links:hover .fa-brands, header .container__header-nav-img .nav__container-links .nav__ul-links .ul__li-links footer .container__footer .footer__ul-li .footer__li_a-links .li__a-links:hover .fa-brands, footer .container__footer .footer__ul-li .footer__li_a-links .li__a-links .fab, footer .container__footer .footer__ul-li .footer__li_a-links header .container__header-nav-img .nav__container-links .nav__ul-links .ul__li-links .li__a-links:hover .fab, header .container__header-nav-img .nav__container-links .nav__ul-links .ul__li-links footer .container__footer .footer__ul-li .footer__li_a-links .li__a-links:hover .fab {
   font-size: 4.5rem;
   color: #f0ffff;
 }
-footer .container__footer .footer__ul-li .footer__li_a-links .li__a-links .fa-brands:hover {
+footer .container__footer .footer__ul-li .footer__li_a-links .li__a-links .fa-github:hover {
+  color: #110b11;
+  font-size: 6rem;
+}
+footer .container__footer .footer__ul-li .footer__li_a-links .li__a-links .fa-facebook:hover {
+  color: #2541b2;
+  font-size: 6rem;
+}
+footer .container__footer .footer__ul-li .footer__li_a-links .li__a-links .fa-linkedin:hover {
+  color: #006494;
+  font-size: 6rem;
+}
+footer .container__footer .footer__ul-li .footer__li_a-links .li__a-links .fa-youtube:hover {
   color: #FF230E;
   font-size: 6rem;
 }
-footer .container__footer .footer__ul-li .footer__li_a-links .li__a-links:hover {
+footer .container__footer .footer__ul-li .footer__li_a-links .li__a-links:hover, footer .container__footer .footer__ul-li .footer__li_a-links header .container__header-nav-img .nav__container-links .nav__ul-links .ul__li-links .li__a-links:hover, header .container__header-nav-img .nav__container-links .nav__ul-links .ul__li-links footer .container__footer .footer__ul-li .footer__li_a-links .li__a-links:hover {
   text-decoration: none;
 }
 footer .footer__p-margintop {
