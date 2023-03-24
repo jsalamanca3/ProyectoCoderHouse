@@ -39,13 +39,15 @@ $color-letter-historia: #0082FF;
 $color-hr: #008BE4;
 $color-contacto: #36A0FF;
 
-$color-background-header: #344A53;
-$color-background-footer: #4B4453;
-$color-background-sections: #FCF8FF;
-$color-background-sections-otros: #B0A8B9;
-$color-background-cards-photos: #181719;
+$background-colors: (
+    c-body: #FCF8FF,
+    c-header: #344A53,
+    c-footer: #4B4453,
+    c-section: #FCF8FF,
+    c-section-otros: #B0A8B9,
+    c-cards-photos: #181719
+);
 
-/* se incluye el map en el css del footer */
 $redes:(
     github: #110b11,
     facebook: #2541b2,
@@ -56,39 +58,3 @@ $redes-size:(
     links: 4.5rem,
     linkshover: 6rem
 );
-
-
-/*
-
-Mixin
-$mixin flex-direction-center($direction,$justify-center) {
-    displey: flex;
-    flex-direction: $direction;
-    justify-content: $justify-center
-    {
-
-@include flex-direction-center($direction)
-
-
-
-
---No incluir en el proyecto
-
-@each $key, $valor in $redes {
-    .red-#($key){
-        background-color: blue;
-        font-siza: 2rem;
-    }
-}
-
-@mixin redes(#nombre) {
-    @if $nombre == instagram {
-        color: blue;
-    }@else if $nombre == facebook {
-        color: violet;
-    }@else if $nombre == instagram {
-        color: black;
-    }@else {
-        color: green
-    }
-*/

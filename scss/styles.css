@@ -1,39 +1,5 @@
 @charset "UTF-8";
 /* se incluye el map en el css del footer */
-/*
-
-Mixin
-$mixin flex-direction-center($direction,$justify-center) {
-    displey: flex;
-    flex-direction: $direction;
-    justify-content: $justify-center
-    {
-
-@include flex-direction-center($direction)
-
-
-
-
---No incluir en el proyecto
-
-@each $key, $valor in $redes {
-    .red-#($key){
-        background-color: blue;
-        font-siza: 2rem;
-    }
-}
-
-@mixin redes(#nombre) {
-    @if $nombre == instagram {
-        color: blue;
-    }@else if $nombre == facebook {
-        color: violet;
-    }@else if $nombre == instagram {
-        color: black;
-    }@else {
-        color: green
-    }
-*/
 * {
   box-sizing: border-box;
   margin: 0;
@@ -42,6 +8,9 @@ $mixin flex-direction-center($direction,$justify-center) {
 
 html {
   font-size: 62.5%;
+}
+html body {
+  background-color: #FCF8FF;
 }
 
 .material-symbols-outlined {
@@ -907,7 +876,10 @@ footer .container__footer .footer__ul-li .footer__li_a-links .li__a-links, foote
   text-decoration: none;
   /* uso del map */
 }
-footer .container__footer .footer__ul-li .footer__li_a-links .li__a-links .fa-brands, footer .container__footer .footer__ul-li .footer__li_a-links header .container__header-nav-img .nav__container-links .nav__ul-links .ul__li-links .li__a-links:hover .fa-brands, header .container__header-nav-img .nav__container-links .nav__ul-links .ul__li-links footer .container__footer .footer__ul-li .footer__li_a-links .li__a-links:hover .fa-brands, footer .container__footer .footer__ul-li .footer__li_a-links .li__a-links .fab, footer .container__footer .footer__ul-li .footer__li_a-links header .container__header-nav-img .nav__container-links .nav__ul-links .ul__li-links .li__a-links:hover .fab, header .container__header-nav-img .nav__container-links .nav__ul-links .ul__li-links footer .container__footer .footer__ul-li .footer__li_a-links .li__a-links:hover .fab {
+footer .container__footer .footer__ul-li .footer__li_a-links .li__a-links .fa-brands, footer .container__footer .footer__ul-li .footer__li_a-links header .container__header-nav-img .nav__container-links .nav__ul-links .ul__li-links .li__a-links:hover .fa-brands, header .container__header-nav-img .nav__container-links .nav__ul-links .ul__li-links footer .container__footer .footer__ul-li .footer__li_a-links .li__a-links:hover .fa-brands,
+footer .container__footer .footer__ul-li .footer__li_a-links .li__a-links .fab,
+footer .container__footer .footer__ul-li .footer__li_a-links header .container__header-nav-img .nav__container-links .nav__ul-links .ul__li-links .li__a-links:hover .fab,
+header .container__header-nav-img .nav__container-links .nav__ul-links .ul__li-links footer .container__footer .footer__ul-li .footer__li_a-links .li__a-links:hover .fab {
   font-size: 4.5rem;
   color: #f0ffff;
 }

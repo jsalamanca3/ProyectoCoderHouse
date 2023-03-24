@@ -1,7 +1,7 @@
 header {
     width: 100%;
     height: 160px;
-    background-color: $color-background-header;
+    background-color: map-get($background-colors, c-header);
     .container__header-nav-img {
         display: flex;
         flex-direction: column;

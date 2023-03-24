@@ -33,7 +33,7 @@ main {
                     @include letter-h-p($letter-large,$font-letter,$font-weight-title-medium,$color-letter-card);
                     width: 60%;
                     height: 60px;
-                    background-color: $color-background-cards-photos;
+                    background-color: map-get($background-colors, c-cards-photos );
                     border: $color-btn-conocer-mas;
                     box-shadow: 0 0 6px #181719;
                     a {
@@ -66,7 +66,7 @@ main {
                     grid-column-gap: 10px;
                     width: 30%;
                     justify-items: start;
-                    background-color: $color-background-cards-photos;
+                    background-color: map-get($background-colors, c-cards-photos );
                     box-shadow: 0 0 6px #181719;
                     .div__cart_works {
                         grid-area: 1 / 1 / 2 / 2;
