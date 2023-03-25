@@ -1,5 +1,5 @@
 main {
-    background: $color-background-sections;
+    background: map-get($background-colors, c-section);
     .container__form_contacto {
         margin-top: 20px;
         margin-bottom: 30px;
