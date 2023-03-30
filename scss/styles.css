@@ -690,6 +690,9 @@ main .container .card-columns .card-img-overlay .card-text {
   font-size: 1.8rem;
   font-weight: 400;
 }
+main .container .card-columns .card-img-overlay:hover {
+  background: #181719;
+}
 main .container .card-columns .card {
   margin: 0 0 20px 0;
 }

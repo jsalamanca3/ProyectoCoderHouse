@@ -73,6 +73,9 @@ main {
                     font-size: $letter-large;
                     font-weight: $font-weight-historia;
                 }
+                &:hover {
+                    background: map-get($background-colors, c-cards-photos)
+                }
             }
         }
         .card-columns .card {
