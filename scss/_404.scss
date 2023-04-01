@@ -1,0 +1,113 @@
+body {
+    main {
+        .container-404 {
+            display: grid;
+            grid-column-gap: 10px;
+            grid-row-gap: 10px;
+            width: 100%;
+            height: auto;
+            padding: 25px;
+            margin: 0;
+            justify-content: center;
+            .container-title {
+                .title-404 {
+                    font-family: 'Inconsolata', monospace;
+                    font-weight: 700;
+                    letter-spacing: -0.08em;
+                    font-size: 2.4rem;
+                    color: #333333;
+                }
+            }
+            .container-img {
+                .img-404 {
+                    width: 100%;
+                    max-width: 400px;
+                    height: auto;
+                    margin-top: 50px;
+                    justify-content: center;
+                }
+            }
+            .container-box {
+                .title_message-404 {
+                    margin-bottom: 25px;
+                    font-family: 'Space Mono', monospace;
+                    font-size: 3.8rem;
+                    font-weight: 700;
+                    letter-spacing: -0.035em;
+                    color: #333333;
+                }
+                p {
+                    margin-bottom: 30px;
+                    font-family: 'Space Mono', monospace;
+                    font-size: 1.5rem;
+                    font-weight: 400;
+                    letter-spacing: -0.035em;
+                    color: #4F4F4F;
+                }
+                .button {
+                    display: flex;
+                    width: 216px;
+                    height: 68px;
+                    margin-bottom: 30px;
+                    margin-top: 30px;
+                    justify-content: center;
+                    align-items: center;
+                    font-family: 'Space Mono';
+                    font-weight: 700;
+                    font-size: 1.4rem;
+                    background: map-get($background-colors, c-cards-photos );
+                    text-decoration: none;
+                    color: $color-letter-a;
+                    box-shadow: 0 0 6px #181719;
+                }
+                .button:link {
+                    text-decoration: none;
+                }
+                .button:hover {
+                    color: $color-nav;;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px){
+    body {
+        width: 100%;
+        height: 100%;
+        background: #ffffff;
+        main {
+            .container-404 {
+                grid-template-areas:
+                "header header header header"
+                "side side main main"
+                "side side main main";
+                justify-content: center;
+                .container-title {
+                    grid-area: header;
+                }
+                .container-img {
+                    display: grid;
+                    grid-area: side;
+                    align-items: center;
+                    .img-404 {
+                        width: 100%;
+                        max-width: 600px;
+                        justify-content: center;
+                    }
+                }
+                .container-box {
+                    display: grid;
+                    grid-area: main;
+                    width: 100%;
+                    height: 80vh;
+                    align-items: center;
+                    align-content: center;
+                    .title_message-404 {
+                        font-size: 6.2rem;
+                    }
+                }
+            }
+        }
+    }
+}

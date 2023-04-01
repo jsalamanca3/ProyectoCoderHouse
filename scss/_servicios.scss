@@ -31,21 +31,19 @@ main {
                 }
                 .btn__servicios_concer-mas {
                     @include letter-h-p($letter-large,$font-letter,$font-weight-title-medium,$color-letter-card);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                     width: 60%;
                     height: 60px;
                     background-color: map-get($background-colors, c-cards-photos );
                     border: $color-btn-conocer-mas;
                     box-shadow: 0 0 6px #181719;
-                    a {
-                        text-decoration: none;
-                        color: $color-letter-a;
-                    }
-                    a:hover {
-                        color: $color-nav;
-                    }
+                    text-decoration: none;
+                    color: $color-letter-a;
                 }
-                .btn__servicios_concer-mas:hover {
-                    background-color: $color-btn-conocer-mas;
+                a:hover {
+                    color: $color-nav;
                 }
             }
             .div__servicios-img {
