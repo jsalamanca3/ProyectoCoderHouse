@@ -109,28 +109,42 @@ main .section__main-servicios .div__section-servicios .div__section-ul .h1__sect
   font-weight: 900;
   color: #1b2021;
 }
-main .section__main-servicios .div__section-servicios .div__section-ul .ul__section-li {
+main .section__main-servicios .div__section-servicios .div__section-ul .div__section_bs_servicios {
   display: flex;
   flex-direction: row;
-  margin-bottom: 10px;
+  justify-content: space-between;
+  color: #BDBDBD;
+  border-bottom: 2px solid rgba(102, 102, 102, 0.5058823529);
+  align-items: flex-start;
+}
+main .section__main-servicios .div__section-servicios .div__section-ul .div__section_bs_servicios .ul__section-li {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 0px;
   gap: 12px;
   font-size: 1.8rem;
   font-family: "Merriweather", serif;
   font-weight: 400;
   color: #BDBDBD;
-  border-bottom: 2px solid #666;
   list-style: none;
 }
-main .section__main-servicios .div__section-servicios .div__section-ul .ul__section-li li a {
+main .section__main-servicios .div__section-servicios .div__section-ul .div__section_bs_servicios .ul__section-li li a {
   text-decoration: none;
   color: #898989;
 }
-main .section__main-servicios .div__section-servicios .div__section-ul .ul__section-li li a span .material-symbols-outlined {
+main .section__main-servicios .div__section-servicios .div__section-ul .div__section_bs_servicios .ul__section-li li a span .material-symbols-outlined {
   color: #BDBDBD;
 }
-main .section__main-servicios .div__section-servicios .div__section-ul .ul__section-li li a:hover {
+main .section__main-servicios .div__section-servicios .div__section-ul .div__section_bs_servicios .ul__section-li li a:hover {
   text-decoration: none;
   color: #0e6ba8;
+}
+main .section__main-servicios .div__section-servicios .div__section-ul .div__section_bs_servicios .btn-group .btn-secondary {
+  font-size: 1.1rem;
+}
+main .section__main-servicios .div__section-servicios .div__section-ul .divSectionVariable {
+  display: flex;
+  flex-direction: column;
 }
 
 @media screen and (max-width: 1023px) {
