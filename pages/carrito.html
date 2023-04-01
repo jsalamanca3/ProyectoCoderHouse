@@ -19,7 +19,7 @@
     href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,300;1,400&family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&family=Work+Sans:wght@500;700;900&display=swap"
     rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="../css/fontawesome.min.css">
   <link rel="stylesheet" href="../css/menu.css">
   <link rel="stylesheet" href="../css/all.min.css">
@@ -95,7 +95,7 @@
     </section>
     <section>
       <div class="div__container-img-historia">
-        <div class="div__container__historia-img animate__animated animate__slideInLeft animate__delay-2s"">
+        <div data-aos="flip-up" data-aos-duration="3000" data-aos-once="true" class="div__container__historia-img">
           <img class="img__picture-historia" src="../assets/image/pexel/img 1 (35).jpg" alt="Imagen que se muestra como tejen">
         </div>
       </div>
@@ -140,9 +140,9 @@
     </section>
     <section class="section__siguenos">
       <hr class="hr__siguenos">
-      <h2 class="h2__Title-siguenos img-caja2 animate__animated animate__slideInLeft animate__delay-1s">¡Mantente al día!</h2>
-      <h3 class="h3__Title-siguenos img-caja2 animate__animated animate__slideInRight animate__delay-2s">Si quieres saber más de nosotros, te invitamos a seguirnos en nuestras redes sociales</h3>
-      <h4 class="h4__Title-siguenos img-caja2 animate__animated animate__slideInLeft animate__delay-4s">¿Qué esperas?</h4>
+      <h2 data-aos="fade-right" data-aos-duration="3000" data-aos-once="true" class="h2__Title-siguenos img-caja2">¡Mantente al día!</h2>
+      <h3 data-aos="fade-left" data-aos-duration="3000" data-aos-once="true" class="h3__Title-siguenos img-caja2">Si quieres saber más de nosotros, te invitamos a seguirnos en nuestras redes sociales</h3>
+      <h4 data-aos="fade-right" data-aos-duration="3000" data-aos-once="true" class="h4__Title-siguenos img-caja2">¿Qué esperas?</h4>
     </section>
   </main>
   <footer>
@@ -162,6 +162,10 @@
     <p class="footer__p footer__p-margintop">Todos los derechos reservados</p>
     <p class="footer__p">2023</p>
   </footer>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    </script>
   <script src="https://kit.fontawesome.com/bb308e0631.js" crossorigin="anonymous"></script>
   <script src="../js/lighbox.js"></script>
   <script src="../js/menu.js"></script>

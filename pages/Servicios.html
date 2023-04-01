@@ -17,7 +17,7 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,300;1,400&family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&family=Work+Sans:wght@500;700;900&display=swap"
     rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="../css/fontawesome.min.css">
   <link rel="stylesheet" href="../css/menu.css">
   <link rel="stylesheet" href="../css/all.min.css">
@@ -87,7 +87,7 @@
           </div>
           <div class="div__servicios-img">
             <img class="img__servicios-cart" src="../assets/image/pexel/img 1 (28).jpg" alt="Imagen de artesanías">
-            <div class="div__cart-img animate__animated animate__slideInRight animate__delay-2s">
+            <div data-aos="fade-left" data-aos-duration="3000" data-aos-once="true" class="div__cart-img">
               <div class="div__cart_works">
                 <img class="img__cart" src="../assets/image/pexel/rostro 1 (1).png" alt="Foto Laura Arenas">
               </div>
@@ -113,7 +113,7 @@
           </div>
           <div class="div__servicios-img inversa__div_servicios-img">
             <img class="img__servicios-cart" src="../assets/image/pexel/img 1 (32).jpg" alt="Imagen de vasos de ceramica">
-            <div class="div__cart-img inversa__div_cart-img animate__animated animate__slideInLeft img-caja2 animate__delay-4s">
+            <div data-aos="fade-right" data-aos-duration="3000" data-aos-once="true" class="div__cart-img inversa__div_cart-img img-caja2">
               <div class="div__cart_works">
                 <img class="img__cart" src="../assets/image/pexel/rostro 1 (2).png" alt="Foto María José">
               </div>
@@ -157,6 +157,10 @@
     <p class="footer__p footer__p-margintop">Todos los derechos reservados</p>
     <p class="footer__p">2023</p>
   </footer>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    </script>
   <script src="https://kit.fontawesome.com/bb308e0631.js" crossorigin="anonymous"></script>
   <script src="../js/lighbox.js"></script>
   <script src="../js/menu.js"></script>
