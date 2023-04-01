@@ -1,5 +1,7 @@
 .container {
     display: grid;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
     width: 100%;
     height: auto;
     padding: 25px;
@@ -42,24 +44,28 @@ p {
     letter-spacing: -0.035em;
     color: #4F4F4F;
 }
-button {
+.button {
+    display: flex;
     width: 216px;
     height: 68px;
     margin-bottom: 30px;
     margin-top: 30px;
+    justify-content: center;
+    align-items: center;
     font-family: 'Space Mono';
     font-style: normal;
     font-weight: 700;
     font-size: 1.4rem;
     background: #333333;
-    color: #ffffff;
-}
-a {
     text-decoration: none;
     color: #BDBDBD;
+    box-shadow: 0 0 6px #181719;
 }
-a:link {
+.button:link {
     text-decoration: none;
+}
+.button:hover {
+    color: #ffffff;
 }
 .container-footer {
     display: grid;

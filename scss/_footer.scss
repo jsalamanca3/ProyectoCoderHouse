@@ -22,32 +22,32 @@ footer {
         list-style: none;
         .li__a-links {
           text-decoration: none;
-          /* uso del map */
-          .fa-brands,
-          .fab {
-            font-size: map-get($redes-size, links);
-            color: $color-btn-red-social;
-          }
-          .fa-github:hover {
-            color: map-get($redes, github);
-            font-size: map-get($redes-size, linkshover);
-          }
-          .fa-facebook:hover {
-            color: map-get($redes, facebook);
-            font-size: map-get($redes-size, linkshover);
-          }
-          .fa-linkedin:hover {
-            color: map-get($redes, linkedin);
-            font-size: map-get($redes-size, linkshover);
-          }
-          .fa-youtube:hover {
-            color: map-get($redes, youtube);
-            font-size: map-get($redes-size, linkshover);
-          }
         }
         .li__a-links:hover {
           text-decoration: none;
         }
+      }
+      /* uso del map */
+      .fa-brands,
+      .fab {
+        font-size: map-get($redes-size, links);
+        color: $color-btn-red-social;
+      }
+      .fa-github:hover {
+        color: map-get($redes, github);
+        font-size: map-get($redes-size, linkshover);
+      }
+      .fa-facebook:hover {
+        color: map-get($redes, facebook);
+        font-size: map-get($redes-size, linkshover);
+      }
+      .fa-linkedin:hover {
+        color: map-get($redes, linkedin);
+        font-size: map-get($redes-size, linkshover);
+      }
+      .fa-youtube:hover {
+        color: map-get($redes, youtube);
+        font-size: map-get($redes-size, linkshover);
       }
     }
   }

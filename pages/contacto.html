@@ -10,12 +10,10 @@
   <title>Ponte en contacto - Tienda Virtual</title>
   <link rel="icon" href="../favicon.ico">
   <link rel="stylesheet" href="../css/bootstrap.min.css">
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,300;1,400&family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&family=Work+Sans:wght@500;700;900&display=swap"
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;1,300;1,400&family=Montserrat:wght@300;400;700&family=Open+Sans:wght@300;400;700&family=Work+Sans:wght@500;700;900&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="../css/fontawesome.min.css">
   <link rel="stylesheet" href="../css/menu.css">
@@ -84,25 +82,25 @@
       <div class="container-fluid">
         <div class="row mt-5">
           <div class="col">
-            <form class="form-horizontal" method="post">
+            <form class="form-horizontal" method="post" action="404.html">
               <fieldset class="container__form_contacto border w-75 mx-auto">
                 <legend class="text-center header">Contanctactanos a través de este formulario</legend>
                 <div class="form-group row">
                   <span class="col-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
                   <div class="col-8">
-                    <input id="fname" name="name" type="text" placeholder="Nombres" class="form-control">
+                    <input id="fname" name="name" type="text" placeholder="Nombres" class="form-control" required>
                   </div>
                 </div>
                 <div class="form-group row">
                   <span class="col-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
                   <div class="col-8">
-                    <input id="lname" name="name" type="text" placeholder="Apellido" class="form-control">
+                    <input id="lname" name="name" type="text" placeholder="Apellido" class="form-control" required>
                   </div>
                 </div>
                 <div class="form-group row">
                   <span class="col-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
                   <div class="col-8">
-                    <input id="email" name="email" type="text" placeholder="Email" class="form-control">
+                    <input id="email" name="email" type="text" placeholder="Email" class="form-control" required>
                   </div>
                 </div>
                 <div class="form-group row">
@@ -117,12 +115,13 @@
                   <div class="col-8">
                     <textarea class="form-control" id="message" name="message"
                       placeholder="Introduzca aquí su masaje para nosotros. Nos pondremos en contacto con usted en un plazo de 2 días laborables."
-                      rows="7"></textarea>
+                      rows="7" required></textarea>
                   </div>
                 </div>
                 <div class="form-group">
                   <div class="col-md-12 text-center">
-                    <button type="submit" class="btn btn-primary btn-lg">Envíar</button>
+                    <button type="submit" class="col-3 btn btn-primary btn-lg">Envíar</button>
+                    <button type="reset" class="col-3 btn btn-primary btn-lg">Borrar</button>
                   </div>
                 </div>
               </fieldset>
@@ -149,17 +148,13 @@
   </main>
   <footer>
     <div class="container__footer">
-      <ul class="footer__ul-li">
-        <li class="footer__li_a-links"><a class="li__a-links" href="https://github.com/jsalamanca3"><i
-              class="fa-brands fa-github" alt="GitHub"></i></a></li>
-        <li class="footer__li_a-links"><a class="li__a-links" href="page-no-found-error-404.html"><i
-              class="fa-brands fa-facebook" alt="Facebook"></i></a></li>
-        <li class="footer__li_a-links"><a class="li__a-links"
-            href="https://www.linkedin.com/in/juli%C3%A1n-fernando-salamanca-chac%C3%B3n-5724371ab/"><i
-              class="fa-brands fa-linkedin" alt="Linkedin"></i></a></li>
-        <li class="footer__li_a-links"><a class="li__a-links" href="page-no-found-error-404.html"><i
-              class="fa-brands fa-youtube" alt="You Tube"></i></a></li>
-      </ul>
+      <nav class="footer__ul-li">
+        <a class="li__a-links" href="https://github.com/jsalamanca3" target="_blank"><li class="footer__li_a-links fa-brands fa-github" alt="GitHub"></li></a>
+        <a class="li__a-links" href="https://www.facebook.com" target="_blank"><li class="footer__li_a-links fa-brands fa-facebook" alt="Facebook"></li></a>
+        <a class="li__a-links"
+            href="https://www.linkedin.com/in/juli%C3%A1n-fernando-salamanca-chac%C3%B3n-5724371ab/" target="_blank"><li class="footer__li_a-links fa-brands fa-linkedin" alt="Linkedin"></li></a>
+        <a class="li__a-links" href="https://www.youtube.com" target="_blank"><li class="footer__li_a-links fa-brands fa-youtube" alt="You Tube"></li></a>
+      </nav>
     </div>
     <p class="footer__p footer__p-margintop">Todos los derechos reservados</p>
     <p class="footer__p">2023</p>
