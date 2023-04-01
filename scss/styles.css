@@ -149,7 +149,7 @@ main .section__main-servicios .div__section-servicios .div__section-ul .divSecti
 
 @media screen and (max-width: 1023px) {
   main .section__main-servicios .div__section-servicios .div__section-ul .h1__section-servicios {
-    font-size: 4.8rem;
+    font-size: 4rem;
   }
   main .section__main-servicios .div__section-servicios .div__section-ul .ul__section-li {
     font-size: 1.4rem;
@@ -157,7 +157,7 @@ main .section__main-servicios .div__section-servicios .div__section-ul .divSecti
 }
 @media screen and (max-width: 400px) {
   main .section__main-servicios .div__section-servicios .div__section-ul .h1__section-servicios {
-    font-size: 3.8rem;
+    font-size: 3.2rem;
   }
 }
 main .main__section_index .container__carrucel, main .main__section_index .img__carrucel {
