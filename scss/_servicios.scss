@@ -146,24 +146,28 @@ main {
     }
 }
 
-@media not all and (min-resolution:.001dpcm) {
-    @supports (-webkit-appearance:none) {
-        main {
-            .div__section-servicios-cart {
-                .section__servicios {
-                    .div__servicios-img {
-                        .div__cart-img {
-                            margin-left: 23%;
-                        }
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    main {
+        .div__section-servicios-cart {
+            .section__servicios {
+                .div__servicios-img {
+                    .div__cart-img {
+                        margin-right: 1%;
+                    }
+                    ::i-block-chrome, .div__cart-img {
+                        margin-left: 23%;
                     }
                 }
             }
-            .div__section-servicios-cart {
-                .inversa__section_servicios {
-                    .inversa__div_servicios-img {
-                        .inversa__div_cart-img{
-                            margin-left: 2%;
-                        }
+        }
+        .div__section-servicios-cart {
+            .inversa__section_servicios {
+                .inversa__div_servicios-img {
+                    .inversa__div_cart-img {
+                        margin-right: 13%;
+                    }
+                    ::i-block-chrome, .inversa__div_cart-img{
+                        margin-left: 2%;
                     }
                 }
             }
@@ -245,15 +249,16 @@ main {
             }
         }
     }
-    @media not all and (min-resolution:.001dpcm) {
-        @supports (-webkit-appearance:none) {
-            main {
-                .div__section-servicios-cart {
-                    .inversa__section_servicios {
-                        .inversa__div_servicios-img {
-                            .inversa__div_cart-img{
-                                margin-left: 23%;
-                            }
+    @media screen and (-webkit-min-device-pixel-ratio:0) {
+        main {
+            .div__section-servicios-cart {
+                .inversa__section_servicios {
+                    .inversa__div_servicios-img {
+                        .inversa__div_cart-img {
+                            margin-right: 2%;
+                        }
+                        ::i-block-chrome, .inversa__div_cart-img{
+                            margin-left: 23%;
                         }
                     }
                 }
