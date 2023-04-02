@@ -525,6 +525,16 @@ main .div__section-map .iframe__map {
   margin-bottom: 50px;
 }
 
+@media not all and (-webkit-min-device-pixel-ratio: 0), not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    main .div__section-servicios-cart .section__servicios .div__servicios-img .div__cart-img {
+      margin-left: 23%;
+    }
+    main .div__section-servicios-cart .inversa__section_servicios .inversa__div_servicios-img .inversa__div_cart-img {
+      margin-left: 2%;
+    }
+  }
+}
 @media screen and (max-width: 1224px) {
   main .div__section-servicios-cart .section__servicios .div__servicios-img .div__cart-img {
     width: 40%;
@@ -571,6 +581,13 @@ main .div__section-map .iframe__map {
   main .div__section-map .h2_tittle-map {
     margin-top: 75px;
     font-size: 3.2rem;
+  }
+  @media not all and (-webkit-min-device-pixel-ratio: 0), not all and (min-resolution: 0.001dpcm) {
+    @supports (-webkit-appearance: none) {
+      main .div__section-servicios-cart .inversa__section_servicios .inversa__div_servicios-img .inversa__div_cart-img {
+        margin-left: 23%;
+      }
+    }
   }
 }
 main .div__container_products,
