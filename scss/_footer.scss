@@ -16,11 +16,11 @@ footer {
       flex-direction: row;
       width: 70%;
       height: auto;
-      justify-content: space-around;
+      justify-content: space-between;
       align-items: center;
-      .footer__li_a-links {
+      .li__a-links {
         list-style: none;
-        .li__a-links {
+        .footer__li_a-links  {
           text-decoration: none;
         }
         .li__a-links:hover {

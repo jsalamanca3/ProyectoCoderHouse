@@ -908,17 +908,17 @@ footer .container__footer .footer__ul-li {
   flex-direction: row;
   width: 70%;
   height: auto;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   /* uso del map */
 }
-footer .container__footer .footer__ul-li .footer__li_a-links {
+footer .container__footer .footer__ul-li .li__a-links, footer .container__footer .footer__ul-li header .container__header-nav-img .nav__container-links .nav__ul-links .ul__li-links .li__a-links:hover, header .container__header-nav-img .nav__container-links .nav__ul-links .ul__li-links footer .container__footer .footer__ul-li .li__a-links:hover {
   list-style: none;
 }
-footer .container__footer .footer__ul-li .footer__li_a-links .li__a-links, footer .container__footer .footer__ul-li .footer__li_a-links header .container__header-nav-img .nav__container-links .nav__ul-links .ul__li-links .li__a-links:hover, header .container__header-nav-img .nav__container-links .nav__ul-links .ul__li-links footer .container__footer .footer__ul-li .footer__li_a-links .li__a-links:hover {
+footer .container__footer .footer__ul-li .li__a-links .footer__li_a-links, footer .container__footer .footer__ul-li header .container__header-nav-img .nav__container-links .nav__ul-links .ul__li-links .li__a-links:hover .footer__li_a-links, header .container__header-nav-img .nav__container-links .nav__ul-links .ul__li-links footer .container__footer .footer__ul-li .li__a-links:hover .footer__li_a-links {
   text-decoration: none;
 }
-footer .container__footer .footer__ul-li .footer__li_a-links .li__a-links:hover, footer .container__footer .footer__ul-li .footer__li_a-links header .container__header-nav-img .nav__container-links .nav__ul-links .ul__li-links .li__a-links:hover, header .container__header-nav-img .nav__container-links .nav__ul-links .ul__li-links footer .container__footer .footer__ul-li .footer__li_a-links .li__a-links:hover {
+footer .container__footer .footer__ul-li .li__a-links .li__a-links:hover, footer .container__footer .footer__ul-li header .container__header-nav-img .nav__container-links .nav__ul-links .ul__li-links .li__a-links:hover .li__a-links:hover, footer .container__footer .footer__ul-li .li__a-links header .container__header-nav-img .nav__container-links .nav__ul-links .ul__li-links .li__a-links:hover, header .container__header-nav-img .nav__container-links .nav__ul-links .ul__li-links footer .container__footer .footer__ul-li .li__a-links .li__a-links:hover {
   text-decoration: none;
 }
 footer .container__footer .footer__ul-li .fa-brands,
