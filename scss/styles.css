@@ -184,6 +184,7 @@ main .container__img-index .h2_text-gallery {
 main .container__img-index .div___container-gallery {
   display: grid;
   grid-template-areas: "primerafila" "segundafila";
+  grid-gap: 10px;
   width: 90%;
   height: auto;
 }

@@ -27,6 +27,7 @@ main {
             grid-template-areas:
             "primerafila"
             "segundafila";
+            grid-gap: 10px;
             width: 90%;
             height: auto;
             .div__gallery-img {
