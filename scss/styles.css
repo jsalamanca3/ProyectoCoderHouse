@@ -793,6 +793,9 @@ main .section__siguenos .h4__Title-siguenos {
   main .div__container_section-historia .container__section-hitoria .p__historias-bienvenida {
     font-size: 1.8rem;
   }
+  main .div__container-img-historia .div__container__historia-img {
+    width: 85%;
+  }
   main .container {
     width: 100%;
   }
@@ -814,6 +817,16 @@ main .section__siguenos .h4__Title-siguenos {
   }
   main .section__siguenos .h4__Title-siguenos {
     font-size: 1.8rem;
+  }
+}
+@media screen and (max-width: 766px) {
+  main .container {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 500px) {
+  main .container {
+    width: 90%;
   }
 }
 main {

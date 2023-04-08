@@ -164,6 +164,11 @@ main {
                 }
             }
         }
+        .div__container-img-historia {
+            .div__container__historia-img {
+                width: 85%;
+            }
+        }
         .container {
             width: 100%;
             .card-columns {
@@ -188,6 +193,20 @@ main {
             .h4__Title-siguenos {
                 font-size: $title-medium;
             }
+        }
+    }
+}
+@media screen and (max-width: 766px) {
+    main {
+        .container {
+            width: 50%;
+        }
+    }
+}
+@media screen and (max-width: 500px) {
+    main {
+        .container {
+            width: 90%;
         }
     }
 }
