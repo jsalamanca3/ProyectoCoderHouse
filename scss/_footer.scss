@@ -16,6 +16,7 @@ footer {
       flex-direction: row;
       width: 70%;
       height: auto;
+      padding-left: 0;
       justify-content: space-between;
       align-items: center;
       .li__a-links {
@@ -36,18 +37,22 @@ footer {
       .fa-github:hover {
         color: map-get($redes, github);
         font-size: map-get($redes-size, linkshover);
+        filter: drop-shadow(0 0 6px #181719);
       }
       .fa-facebook:hover {
         color: map-get($redes, facebook);
         font-size: map-get($redes-size, linkshover);
+        filter: drop-shadow(0 0 6px #181719);
       }
       .fa-linkedin:hover {
         color: map-get($redes, linkedin);
         font-size: map-get($redes-size, linkshover);
+        filter: drop-shadow(0 0 6px #181719);
       }
       .fa-youtube:hover {
         color: map-get($redes, youtube);
         font-size: map-get($redes-size, linkshover);
+        filter: drop-shadow(0 0 6px #181719);
       }
     }
   }
@@ -69,6 +74,9 @@ footer {
   footer {
     .container__footer {
       width: 100%;
+      .footer__ul-li {
+        width: 85%;
+      }
     }
   }
 }

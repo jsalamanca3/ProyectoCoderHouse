@@ -6,12 +6,8 @@
 }
 
 .material-symbols-outlined {
+  color: #565555;
   font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 48;
-}
-
-.animate__animated {
-  --animate-duration: 2s;
-  --animate-delay: 1s;
 }
 
 html {
@@ -55,6 +51,7 @@ header .container__header-nav-img .nav__container-links .nav__ul-links {
   flex-direction: row;
   width: 70%;
   margin-top: 50px;
+  padding-left: 0;
   justify-content: space-evenly;
   align-items: center;
 }
@@ -130,7 +127,7 @@ main .section__main-servicios .div__section-servicios .div__section-ul .div__sec
 }
 main .section__main-servicios .div__section-servicios .div__section-ul .div__section_bs_servicios .ul__section-li li a {
   text-decoration: none;
-  color: #898989;
+  color: #565555;
 }
 main .section__main-servicios .div__section-servicios .div__section-ul .div__section_bs_servicios .ul__section-li li a span .material-symbols-outlined {
   color: #BDBDBD;
@@ -413,7 +410,7 @@ main .div__section-servicios-cart .section__servicios .div_servicios .btn__servi
   border: #325082;
   box-shadow: 0 0 6px #181719;
   text-decoration: none;
-  color: #898989;
+  color: #565555;
 }
 main .div__section-servicios-cart .section__servicios .div_servicios a:hover {
   color: #0e6ba8;
@@ -908,6 +905,7 @@ footer .container__footer .footer__ul-li {
   flex-direction: row;
   width: 70%;
   height: auto;
+  padding-left: 0;
   justify-content: space-between;
   align-items: center;
   /* uso del map */
@@ -929,18 +927,22 @@ footer .container__footer .footer__ul-li .fab {
 footer .container__footer .footer__ul-li .fa-github:hover {
   color: #110b11;
   font-size: 6rem;
+  filter: drop-shadow(0 0 6px #181719);
 }
 footer .container__footer .footer__ul-li .fa-facebook:hover {
   color: #2541b2;
   font-size: 6rem;
+  filter: drop-shadow(0 0 6px #181719);
 }
 footer .container__footer .footer__ul-li .fa-linkedin:hover {
   color: #006494;
   font-size: 6rem;
+  filter: drop-shadow(0 0 6px #181719);
 }
 footer .container__footer .footer__ul-li .fa-youtube:hover {
   color: #FF230E;
   font-size: 6rem;
+  filter: drop-shadow(0 0 6px #181719);
 }
 footer .footer__p-margintop {
   margin-top: 45px;
@@ -956,6 +958,9 @@ footer .footer__p {
 @media screen and (max-width: 460px) {
   footer .container__footer {
     width: 100%;
+  }
+  footer .container__footer .footer__ul-li {
+    width: 85%;
   }
 }
 body main .container-404 {
@@ -1011,7 +1016,7 @@ body main .container-404 .container-box .button {
   font-size: 1.4rem;
   background: #181719;
   text-decoration: none;
-  color: #898989;
+  color: #565555;
   box-shadow: 0 0 6px #181719;
 }
 body main .container-404 .container-box .button:link {
