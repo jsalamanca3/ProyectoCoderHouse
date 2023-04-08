@@ -1,6 +1,7 @@
 main {
     background: map-get($background-colors, c-section);
     .container__form_contacto {
+        width: 75%;
         margin-top: 20px;
         margin-bottom: 30px;
         legend {
@@ -49,12 +50,19 @@ main {
 @media screen and (max-width: 767px) {
     main {
         .container__form_contacto {
-            width: 90%;
+            width: 80%;
         }
         div .CajaDiv__contacto-textForm {
             width: 100%;
             margin-bottom: 25px;
             text-align: center;
+        }
+    }
+}
+@media screen and (max-width: 475px) {
+    main {
+        .container__form_contacto {
+            width: 95%;
         }
     }
 }
