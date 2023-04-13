@@ -6,11 +6,6 @@ main {
         @include letter-h-p($letter-large,$font-letter,$font-weight-letter-regular,$color-text);
         text-align: justify;
     }
-    div {
-        .p__products_information {
-            font-size: $letter-medium;
-        }
-    }
     .div__container_products {
         .a__categorias_products {
             font-size: $title-ex;
@@ -25,6 +20,7 @@ main {
     .div__cards_products {
         .img__card_productos {
             height: 450px;
+            object-fit: cover;
         }
     }
 }

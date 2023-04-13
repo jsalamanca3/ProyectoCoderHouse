@@ -1,4 +1,34 @@
 main {
+    .div__index_bienvenida {
+        width: 100%;
+        height: auto;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        text-align: center;
+        .h1__index_bienvenida {
+            margin-top: 50px;
+            margin-bottom: 20px;
+            padding: 0 5% 0 5%;
+            @include letter-h-p($title-bienvenida,$font-title,$font-weight-title-regular,$color-title);
+        }
+        .p__index_introduccion {
+            margin-bottom: 15px;
+            padding: 0 5% 0 5%;
+            @include letter-h-p($letter-large,$font-letter,$font-weight-letter-regular,$color-letter);
+            a {
+                text-decoration: none;
+                list-style: none;
+                color: $color-hr;
+                font-weight: $font-weight-title-regular;
+            }
+        }
+        .p__index_introduccion-otros  {
+            @extend .p__index_introduccion;
+            margin-top: 30px;
+            margin-bottom: 45px;
+            color: $color-title;
+        }
+    }
     .main__section_index {
         .container__carrucel {
             width: 100%;
@@ -8,6 +38,7 @@ main {
         .img__carrucel {
             @extend .container__carrucel;
             margin-top: 0px;
+            object-fit: cover;
         }
     }
     .container__img-index {
@@ -112,8 +143,13 @@ main {
     }
 }
 
-@media screen and (max-width: 746px){
+@media screen and (max-width: 768px){
     main {
+        .div__index_bienvenida {
+            .h1__index_bienvenida {
+                font-size: 6rem;
+            }
+        }
         .main__section_index {
             .container__carrucel {
                 height: 60vw;
@@ -181,6 +217,17 @@ main {
 
 @media screen and (max-width: 425px){
     main {
+        .div__index_bienvenida {
+            .h1__index_bienvenida {
+                font-size: $title-haiger;
+            }
+            .p__index_introduccion {
+                font-size: $letter-medium;
+            }
+            .p__index_introduccion-otros {
+                font-size: $letter-medium;
+            }
+        }
         .main__section_index  {
             .container__carrucel {
                 height: 80vw;
