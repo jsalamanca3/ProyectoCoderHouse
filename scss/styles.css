@@ -495,7 +495,7 @@ main .div__section-presentation .container__section-presentation .div__container
 }
 @media screen and (max-width: 425px) {
   main .div__index_bienvenida .h1__index_bienvenida {
-    font-size: 5rem;
+    font-size: 3.2rem;
   }
   main .div__index_bienvenida .p__index_introduccion, main .div__index_bienvenida .p__index_introduccion-otros {
     font-size: 1.4rem;
@@ -793,6 +793,9 @@ main .div__cards_products .zoom-img:hover {
   }
 }
 @media screen and (max-width: 568px) {
+  main .p__products_information {
+    font-size: 1.4rem;
+  }
   main .div__container_products .a__categorias_products {
     font-size: 1.8rem;
   }

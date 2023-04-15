@@ -41,6 +41,9 @@ main {
 }
 @media screen and (max-width: 568px) {
     main {
+        .p__products_information {
+            font-size: $letter-medium;
+        }
         .div__container_products {
             .a__categorias_products {
                 font-size: $title-medium;
