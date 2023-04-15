@@ -18,9 +18,15 @@ main {
         }
     }
     .div__cards_products {
-        .img__card_productos {
-            height: 450px;
-            object-fit: cover;
+        .zoom-img {
+            transition: transform .6s;
+            .img__card_productos {
+                height: 450px;
+                object-fit: cover;
+            }
+        }
+        .zoom-img:hover {
+            transform: scale(1.04);
         }
     }
 }
